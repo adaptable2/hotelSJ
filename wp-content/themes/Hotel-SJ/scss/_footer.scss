@@ -1,0 +1,107 @@
+footer{
+	background: $azul;
+	font-family: "AdobeArabic-Regular", system-ui;
+	font-size: 24px;
+	.form-footer{
+		position: relative;
+		overflow-x: hidden;
+		p{
+			margin: 0;
+		}
+		input{
+			background: transparent;
+			border: solid 1px white;
+			color: white;
+			padding-left: 15px;
+		}
+		input[type="email"]{
+			width: 100%;
+		}
+		input[type="submit"]{
+			border: solid 1px white;
+			border-left: none;
+			background: $dorado;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding-left: 13px;
+			padding-right: 13px;
+			height: 100%;
+		}
+	}
+	div.wpcf7 {
+		.ajax-loader{
+			display: none;
+		}
+	}
+	.datos{
+		p{
+			padding-left: 25px;
+		}
+		.ubi{
+			background: url(img/ubi.png) no-repeat left 10px / 15px;
+		}
+		.tel{
+			background: url(img/phone.png) no-repeat left 10px / 15px;
+		}
+		.email{
+			background: url(img/mail.png) no-repeat left 10px / 15px;
+		}
+		.chat{
+			background: url(img/chat.png) no-repeat left 10px / 15px;
+		}
+	}
+	.copy{
+		font-size: 16px;
+		letter-spacing: 2px;
+		border-top: solid 1px white;
+		a{
+			padding-left: 15px;
+			display: block;
+			position: relative;
+			color: white;
+			&:hover{
+				color: white;
+			}
+		}
+	}
+	.menu-footer{
+		a{
+			padding-left: 15px;
+			display: block;
+			position: relative;
+			&:hover{
+				color: white;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -3.5px;
+				width: 7px;
+				height: 7px;
+				border-top: solid 2px white;
+				border-right: solid 2px white;
+				transform: translateY(-50%) rotate(45deg);
+			}
+		}
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		a{
+			color: white;
+			text-transform: uppercase;
+		}
+		&.redes{
+			padding-top: 15px;
+			li{
+				display: inline-block;
+				a{
+					padding: 5px;
+				}
+			}
+		}
+	}
+}

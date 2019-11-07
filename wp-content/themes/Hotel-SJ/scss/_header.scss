@@ -1,0 +1,26 @@
+.nav-page{	
+	background: white;
+	ul{
+		padding: 0;
+		li{
+			display: block;
+			@media only screen and (min-width: 768px) {
+				display: inline-block;
+			}
+		}
+		a{
+			padding: 20px;
+			display: block;
+			text-transform: uppercase;
+			font-family: "TwCenMT-Bold", system-ui;
+			color: $gray;
+		}
+	}
+}
+.bar-menu{
+	width: 25px;
+	height: 2px;
+	margin: 4px 0;
+	background: $vino;
+	display: block;
+}
