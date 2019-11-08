@@ -51,15 +51,18 @@
 		}
 	}
 	&-one{
-		margin-bottom: -5%;
+		@media only screen and (min-width: 992px){
+			margin-bottom: -5%;
+		}
 		.img-one{
 			position: relative;
 			img{
 				position: relative;
 				z-index: 1;
-				margin-bottom: -20%;
+				@media only screen and (min-width: 992px){
+					margin-bottom: -20%;
+				}
 			}
-
 			&:after{
 				content: "";
 				position: absolute;
@@ -68,13 +71,20 @@
 				height: 100%;
 				width: 80%;
 				left: -10%;
+				display: none;
 				background-color: rgba($gray,0.5);
+				@media only screen and (min-width: 992px) {
+					display: block;
+				}
 			}
 		}
 	}
 	&-two{
 		position: relative;
-		padding: 200px 15px 100px;
+		padding: 30px 15px 0;
+		@media only screen and (min-width: 992px){
+			padding: 200px 15px 100px;
+		}
 		&:after{
 			content: "";
 			position: absolute;
@@ -87,6 +97,10 @@
 			right: 5%;
 			background-color:$dorado;
 			z-index: 0;
+			display: none;
+			@media only screen and (min-width: 992px){
+				display: block;
+			}
 		}
 		.img-two{
 			position: relative;

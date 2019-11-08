@@ -1,0 +1,12 @@
+.item-trip{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    p{
+    	font-size: 20px;
+    	line-height: 22px;
+    }
+    h2,h5{
+    	font-family: 'TwCenMT-Bold',system-ui;    	
+    }
+}
