@@ -7,6 +7,10 @@ footer{
 		overflow-x: hidden;
 		p{
 			margin: 0;
+			display: flex;
+			span{
+				display: flex;
+			}
 		}
 		input{
 			background: transparent;
@@ -103,6 +107,24 @@ footer{
 					padding: 5px;
 				}
 			}
+		}
+	}
+}
+
+.footer-carousel{
+	text-align: center;
+	img{
+		max-height: 100px;
+		max-width: 200px;
+	}
+	.slick-arrow{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 32px;
+		height: 32px;
+		&.slick-next{
+			right: 0;
 		}
 	}
 }

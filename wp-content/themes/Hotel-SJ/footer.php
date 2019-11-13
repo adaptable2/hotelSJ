@@ -7,23 +7,23 @@
 						</h2>
 						<?php
 	                    // Argumentos para una busqueda de post type
-							$args = array(
+						$args = array(
 								'post_type' => 'footer-form', // Nombre del post type
 								'order' => 'ASC'
 							);
-							$correos = new WP_Query($args);
-							if ($correos->posts):
+						$correos = new WP_Query($args);
+						if ($correos->posts):
 	                      // Foreach para recorrer el resultado de la busqueda
 							foreach ($correos->posts as $correo):
-									$correo_form = $correo->code_form;
-							?>
-							<?php
-								endforeach;
-								endif; 
-							?>
-							<div class="form">
-		                    	<?php echo $correo_form;?>
-		                    </div>
+								$correo_form = $correo->code_form;
+								?>
+								<?php
+							endforeach;
+						endif; 
+						?>
+						<div class="form">
+							<?php echo $correo_form;?>
+						</div>
 					</div>
 					<div class="col-md-6 p-0">
 						<div class='v-and-m-responsive'>
@@ -34,6 +34,22 @@
 			</section>
 			<!-- Formulario -->
 			<!-- footer -->
+			<div class="container-fluid">
+				<div class="row py-5">
+					<div class="col-md-12 font-arabic font-upper text-center py-3">
+						<h2>Comunidad digital</h2>
+					</div>
+					<div class="col-md-12">
+						<div class="footer-carousel">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ambiente.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/cotelco.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/codeorg.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/turi.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/bureau.svg">
+						</div>
+					</div>				
+				</div>
+			</div>
 			<footer class="footer py-5" role="contentinfo">
 				<div class="container">
 					<div class="row color-white">
@@ -61,16 +77,16 @@
 							$correos = new WP_Query($args);
 							if ($correos->posts):
 	                      // Foreach para recorrer el resultado de la busqueda
-							foreach ($correos->posts as $correo):
+								foreach ($correos->posts as $correo):
 									$correo_desc = $correo->code;
-							?>
-							<?php
+									?>
+									<?php
 								endforeach;
-								endif; 
+							endif; 
 							?>
 							<div class="form-footer">
-		                    	<?php echo $correo_desc;?>
-		                    </div>
+								<?php echo $correo_desc;?>
+							</div>
 							<ul class="redes">
 								<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/fb.png" alt="" class="img-fluid"></a></li>
 								<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/tw.png" alt="" class="img-fluid"></a></li>
@@ -90,19 +106,19 @@
 			</footer>
 			<!-- /footer -->
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" async>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" async>
- 		<?php wp_footer(); ?>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js" defer></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-		<script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" async>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" async>
+			<?php wp_footer(); ?>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+			<script>
         // conditionizr.com
         // configure environment tests
         conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
+        	assets: '<?php echo get_template_directory_uri(); ?>',
+        	tests: {}
         });
-        </script>
-	</body>
+    </script>
+</body>
 </html>

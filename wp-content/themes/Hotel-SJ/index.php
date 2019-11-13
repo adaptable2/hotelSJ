@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="">
+<div class="d-none">
 	<!-- banner -->
 	<section class="banner">
 		<div class="carousel-banner">
@@ -250,7 +250,7 @@
 
 					?>
 					<div class="col-6 col-md p-0 galeria-item d-flex">
-						<img src="<?php echo $galeria_img; ?>" alt="" class="img-fluid">
+						<img src="<?php echo $galeria_img; ?>" alt="" class="w-100">
 						<div class="titulo">
 							<p><?php echo $galeria_name;?></p>
 						</div>
@@ -264,28 +264,245 @@
 	<!-- /galeria -->
 </div>
 
-<div class="container d-none">
-	<div class="row">
-		<div class="d-grid w-100">
-			<div class="item">num1</div>
-			<div class="item">num2</div>
-			<div class="item">num3</div>
-			<div class="item"><p>num4</p>
-				<div class="item">num1</div>
-				<div class="item">num2</div>
-				<div class="item">num3</div>
-				<div class="item">num4</div>
+<div class="servicios pb-5 d-none">
+	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
+		<h1>Servicios</h1>
+	</section>
+	<section class="container-fluid">
+		<div class="row servicio">
+			<div class="col-md-6 s-img p-0">
+				<img src="https://picsum.photos/id/222/985/845" class="w-100">
 			</div>
-			<div class="item">num5</div>
-			<div class="item">num6</div>
-			<div class="item">num7</div>
-			<div class="item">num8</div>
-			<div class="item">num9</div>
-			<div class="item">num10</div>
-			<div class="item">num11</div>
-			<div class="item">num12</div>
+			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
+				<div class="row">
+					<div class="col-xl-6 col-md-8 py-5">
+						<img src="http://localhost/hotelSJ/wp-content/uploads/2019/11/gym.png" alt="">
+						<div class="font-upper">
+							<h2>camilo</h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<div class="d-block btn-c pt-5">
+							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+		<div class="row servicio">
+			<div class="col-md-6 s-img p-0">
+				<img src="https://picsum.photos/id/222/985/845" class="w-100">
+			</div>
+			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
+				<div class="row">
+					<div class="col-xl-6 col-md-8 py-5">
+						<img src="http://localhost/hotelSJ/wp-content/uploads/2019/11/gym.png" alt="">
+						<div class="font-upper">
+							<h2>ALOJAMIENTO EXPRESS</h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<div class="d-block btn-c pt-5">
+							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row servicio">
+			<div class="col-md-6 s-img p-0">
+				<img src="https://picsum.photos/id/222/985/845" class="w-100">
+			</div>
+			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
+				<div class="row">
+					<div class="col-xl-6 col-md-8 py-5">
+						<img src="http://localhost/hotelSJ/wp-content/uploads/2019/11/gym.png" alt="">
+						<div class="font-upper">
+							<h2>camilo</h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<div class="d-block btn-c pt-5">
+							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row servicio">
+			<div class="col-md-6 s-img p-0">
+				<img src="https://picsum.photos/id/222/985/845" class="w-100">
+			</div>
+			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
+				<div class="row">
+					<div class="col-xl-6 col-md-8 py-5">
+						<img src="http://localhost/hotelSJ/wp-content/uploads/2019/11/gym.png" alt="">
+						<div class="font-upper">
+							<h2>ALOJAMIENTO EXPRESS</h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<div class="d-block btn-c pt-5">
+							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="habitaciones pb-5 d-none">
+	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
+		<h1>torre ejecutiva</h1>
+	</section>
+	<section class="container ">
+		<div class="row habitacion py-3 color-gray">
+			<div class="col-md-7 s-img p-0">
+				<div class="carousel-habi">
+					<div class="item">
+						<img src="https://picsum.photos/id/122/985/845" class="w-100">
+					</div>
+					<div class="item">
+						<img src="https://picsum.photos/id/442/985/845" class="w-100">
+					</div>
+					<div class="item">
+						<img src="https://picsum.photos/id/522/985/845" class="w-100">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+				<div class="font-upper">
+					<h2>jr suite</h2>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+				<div class="date-h">
+					<h2>32 m<sup>2</sup></h2>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+				<div class="torre">
+					<p>Torre Ejecutiva</p>
+				</div>
+			</div>
+		</div>
+		<div class="row habitacion py-3 color-gray">
+			<div class="col-md-7 s-img p-0">
+				<div class="carousel-habi">
+					<div class="item">
+						<img src="https://picsum.photos/id/212/985/845" class="w-100">
+					</div>
+					<div class="item">
+						<img src="https://picsum.photos/id/232/985/845" class="w-100">
+					</div>
+					<div class="item">
+						<img src="https://picsum.photos/id/252/985/845" class="w-100">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+				<div class="font-upper">
+					<h2>jr suite</h2>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+				<div class="date-h">
+					<h2>32 m<sup>2</sup></h2>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+				<div class="torre">
+					<p>Torre Ejecutiva</p>
+				</div>				
+			</div>
+		</div>
+	</section>
+</div>
+<div class="quienes-somos pb-5 d-none">
+	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
+		<h1>Servicios</h1>
+	</section>
+	<section class="elegirnos bg-beige">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="title-quienes bg-cafe col-md-4 d-flex align-items-center justify-content-center font-arabic py-5">
+					<h2>Porque elegirnos</h2>
+				</div>
+				<div class="col-md-6 py-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim qui, ullam vero, vitae quod nesciunt, quisquam nostrum atque voluptatem est distinctio exercitationem blanditiis tempora excepturi dignissimos aliquam, veritatis reprehenderit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim qui, ullam vero, vitae quod nesciunt, quisquam nostrum atque voluptatem est distinctio exercitationem blanditiis tempora excepturi dignissimos aliquam, veritatis reprehenderit.</p>
+					 <ul>
+					 	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa id, ratione quibusdam necessitatibus amet sequi aspernatur adipisci ullam laborum sit quae saepe veritatis, sapiente incidunt nobis iste. Animi, officiis!</li>
+					 	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta libero aut dolores atque esse at ullam ipsam deserunt, nemo nostrum reprehenderit adipisci, doloremque animi laborum, ab voluptatibus, dolorem consequuntur temporibus.</li>
+					 </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="amenities bg-azul color-white">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-6 d-flex justify-content-center img-amenites">
+					<img src="https://picsum.photos/id/222/613/832" alt="" class="img-fluid">          
+				</div>
+				<div class="col-lg-12 col-xl-4 justify-content-center d-flex">
+					<div class="row text-center py-5">
+						<div class="col-md-12 font-arabic color-dorado">
+							<h2>DESCUBRE AMENITIES</h2>
+						</div>
+						<div class="item col-md-6">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus iusto provident molestiae reprehenderit libero similique deleniti, voluptas!</p>
+						</div>
+						<div class="item col-md-6">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dignissimos eligendi repellendus tempora, veniam, fugit </p>
+						</div>
+						<div class="item col-md-6">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae mollitia neque dicta unde, sed esse modi quos harum deserunt eaque </p>
+						</div>
+						<div class="item col-md-6">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis rerum minima distinctio error temporibus! Eius minima, </p>
+						</div>
+						<div class="item col-md-6">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, hic dolorum, error, minima fugiat magni quos porro delectus ab </p>
+						</div>
+						<div class="item col-md-6">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem alias, reprehenderit optio rem consectetur magnam, omnis. Unde </p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="qs-tripadvisor bg-beige py-5 font-arabic">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center ">
+					<div class="personas item-trip-ameni text-center">
+						<div class="icon-img-fluid">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+						</div>
+						<h2 class="font-arabic">50.000</h2>
+					</div>
+					<p>PERSONAS REGISTRADAS EN NUESTRO HOTEL</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<div class="personas item-trip-ameni text-center">
+						<div class="icon-img-fluid">
+							<img src="https://picsum.photos/id/232/60/60" alt="">
+						</div>
+						<h2 class="font-arabic">50.000</h2>
+					</div>
+					<p>PERSONAS REGISTRADAS EN NUESTRO HOTEL</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
 
 <?php get_footer(); ?>

@@ -47,6 +47,32 @@
 			nextArrow: '<button type="button" class="slick-next">></button>',
 			prevArrow: '<button type="button" class="slick-prev"><</button>'
 		});
+		$('.carousel-habi').slick({
+			nextArrow: '<button type="button" class="slick-next">></button>',
+			prevArrow: '<button type="button" class="slick-prev"><</button>',
+			dots: true
+		});
+		$('.footer-carousel').slick({
+			loop:true,
+			nextArrow: '<button type="button" class="slick-next">></button>',
+			prevArrow: '<button type="button" class="slick-prev"><</button>',
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			  responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 3
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1
+			      }
+			    }
+			  ]
+		});
 
 	});
 	
