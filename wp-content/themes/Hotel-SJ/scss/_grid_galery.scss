@@ -1,0 +1,37 @@
+.item-galery{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.filter{
+	ul{
+		list-style: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			&.active{
+				a{
+					position: relative;
+					display: block;
+					&:after{
+						content: "";
+						display: block;
+						position: absolute;
+						bottom: 20px;
+						height: 2px;
+						width: 100%;
+						left: 0;
+						background: $dorado;
+					}
+				}
+			}
+		}
+		a{
+			padding: 30px;
+			display: block;
+			color: $gray;
+			font-family: 'TwCenMT-Bold', system-ui;
+			font-weight: 100;
+		}
+	}
+}

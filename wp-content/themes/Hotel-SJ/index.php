@@ -5,21 +5,21 @@
 		<div class="carousel-banner">
 			<?php
 			    	// Argumentos para una busqueda de post type
-				$args = array(
+			$args = array(
 						'post_type' => 'banner_home', // Nombre del post type
 						'order' => 'ASC'
 					);
-				$banners = new WP_Query($args);
-				if ($banners->posts):
+			$banners = new WP_Query($args);
+			if ($banners->posts):
 			      // Foreach para recorrer el resultado de la busqueda
-					foreach ($banners->posts as $banner):
-						$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
-			?>
-				<div class="c-home item" style="background: url(<?php echo get_template_directory_uri(); ?>/img/banner@1x.png) no-repeat center center / cover;">
-				</div>
-			<?php
+				foreach ($banners->posts as $banner):
+					$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
+					?>
+					<div class="c-home item" style="background: url(<?php echo get_template_directory_uri(); ?>/img/banner@1x.png) no-repeat center center / cover;">
+					</div>
+					<?php
 				endforeach;
-				endif; 
+			endif; 
 			?>
 		</div>
 	</section>
@@ -104,24 +104,24 @@
 			<div class="col-lg-4 text-center pt-3 pb-5 py-lg-0">
 				<h2 class="color-dorado">ACERCA DE NOSOTROS</h2>
 				<div class="carousel font-roboto">
-		<?php
+					<?php
 		    	// Argumentos para una busqueda de post type
-			$args = array(
+					$args = array(
 					'post_type' => 'carrusel_nosotros', // Nombre del post type
 					'order' => 'ASC'
 				);
-			$carousel_n = new WP_Query($args);
-			if ($carousel_n->posts):
+					$carousel_n = new WP_Query($args);
+					if ($carousel_n->posts):
 		      // Foreach para recorrer el resultado de la busqueda
-				foreach ($carousel_n->posts as $carousel):
-					$carousel_desc = $carousel->post_content;
-		?>
-					<div>
-						<p class="color-gray"><?php echo $carousel_desc;?></p>
-					</div>
-					<?php
+						foreach ($carousel_n->posts as $carousel):
+							$carousel_desc = $carousel->post_content;
+							?>
+							<div>
+								<p class="color-gray"><?php echo $carousel_desc;?></p>
+							</div>
+							<?php
 						endforeach;
-						endif; 
+					endif; 
 					?>
 				</div>
 			</div>
@@ -132,7 +132,7 @@
 			</div>
 			<div class="col-lg-6 d-flex align-items-center">
 				<div class="row text-center color-gray">
-				<?php
+					<?php
 				    	// Argumentos para una busqueda de post type
 					$args = array(
 							'post_type' => 'items_nosotros', // Nombre del post type
@@ -145,15 +145,15 @@
 						foreach ($items_n->posts as $item):
 							$item_desc = $item->post_content;
 							$item_img = wp_get_attachment_url( get_post_thumbnail_id($item->ID, 'full') );
-				?>				
-					<div class="col-md-4 item-icon">
-						<img src="<?php echo $item_img; ?>" alt="">
-						<p><?php echo $item_desc;?></p>
-					</div>
-				<?php
-					endforeach;
+							?>				
+							<div class="col-md-4 item-icon">
+								<img src="<?php echo $item_img; ?>" alt="">
+								<p><?php echo $item_desc;?></p>
+							</div>
+							<?php
+						endforeach;
 					endif; 
-				?>				
+					?>				
 				</div>
 			</div>
 		</div>
@@ -164,25 +164,25 @@
 				<div class="row color-gray">
 					<?php
 					    	// Argumentos para una busqueda de post type
-						$args = array(
+					$args = array(
 								'post_type' => 'items_nosotros', // Nombre del post type
 								'order' => 'ASC',
 								'posicion' => 'blanco'
 							);
-						$items_n = new WP_Query($args);
-						if ($items_n->posts):
+					$items_n = new WP_Query($args);
+					if ($items_n->posts):
 					      // Foreach para recorrer el resultado de la busqueda
-							foreach ($items_n->posts as $item):
-								$item_desc = $item->post_content;
-								$item_img = wp_get_attachment_url( get_post_thumbnail_id($item->ID, 'full') );
-					?>				
-						<div class="col-md-4 item-icon">
-							<img src="<?php echo $item_img; ?>" alt="">
-							<p><?php echo $item_desc;?></p>
-						</div>
-					<?php
+						foreach ($items_n->posts as $item):
+							$item_desc = $item->post_content;
+							$item_img = wp_get_attachment_url( get_post_thumbnail_id($item->ID, 'full') );
+							?>				
+							<div class="col-md-4 item-icon">
+								<img src="<?php echo $item_img; ?>" alt="">
+								<p><?php echo $item_desc;?></p>
+							</div>
+							<?php
 						endforeach;
-						endif; 
+					endif; 
 					?>	
 				</div>
 			</div>
@@ -221,9 +221,9 @@
 						</div>			
 					</div>
 					<?php
-						endforeach;
-						endif; 
-					?>
+				endforeach;
+			endif; 
+			?>
 		</div>
 	</section>
 	<!-- servicios -->
@@ -263,7 +263,6 @@
 	</section>
 	<!-- /galeria -->
 </div>
-
 <div class="servicios pb-5 d-none">
 	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
 		<h1>Servicios</h1>
@@ -347,79 +346,178 @@
 		</div>
 	</section>
 </div>
-
 <div class="habitaciones pb-5 d-none">
 	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
-		<h1>torre ejecutiva</h1>
+		<h1>alojamiento</h1>
 	</section>
 	<section class="container ">
-		<div class="row habitacion py-3 color-gray">
-			<div class="col-md-7 s-img p-0">
-				<div class="carousel-habi">
-					<div class="item">
-						<img src="https://picsum.photos/id/122/985/845" class="w-100">
+
+		<ul class="nav nav-tabs tabs-habitacion">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#torre1">Torre Antioquia</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#torre2">Torre ejecutiva</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane container active" id="torre1">
+				<div class="row habitacion py-3 color-gray">
+					<div class="col-md-7 s-img p-0">
+						<div class="carousel-habi">
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
+							</div>
+						</div>
 					</div>
-					<div class="item">
-						<img src="https://picsum.photos/id/442/985/845" class="w-100">
+					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+						<div class="font-upper">
+							<h2>jr suite</h2>
+						</div>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						</div>
+						<div class="date-h">
+							<h2>32 m<sup>2</sup></h2>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>
+						<div class="torre font">
+							<p>Torre Antioquia</p>
+						</div>
 					</div>
-					<div class="item">
-						<img src="https://picsum.photos/id/522/985/845" class="w-100">
+				</div>
+				<div class="row habitacion py-3 color-gray">
+					<div class="col-md-7 s-img p-0">
+						<div class="carousel-habi">
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+						<div class="font-upper">
+							<h2>jr suite</h2>
+						</div>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						</div>
+						<div class="date-h">
+							<h2>32 m<sup>2</sup></h2>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>
+						<div class="torre">
+							<p>Torre Antioquia</p>
+						</div>				
 					</div>
 				</div>
 			</div>
-			<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
-				<div class="font-upper">
-					<h2>jr suite</h2>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
-				<div class="date-h">
-					<h2>32 m<sup>2</sup></h2>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-				</div>
-				<div class="torre">
-					<p>Torre Ejecutiva</p>
-				</div>
-			</div>
-		</div>
-		<div class="row habitacion py-3 color-gray">
-			<div class="col-md-7 s-img p-0">
-				<div class="carousel-habi">
-					<div class="item">
-						<img src="https://picsum.photos/id/212/985/845" class="w-100">
+			<div class="tab-pane container" id="torre2">
+				<div class="row habitacion py-3 color-gray">
+					<div class="col-md-7 s-img p-0">
+						<div class="carousel-habi">
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
+							</div>
+						</div>
 					</div>
-					<div class="item">
-						<img src="https://picsum.photos/id/232/985/845" class="w-100">
+					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+						<div class="font-upper">
+							<h2>jr suite</h2>
+						</div>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						</div>
+						<div class="date-h">
+							<h2>32 m<sup>2</sup></h2>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>
+						<div class="torre font">
+							<p>Torre Ejecutiva</p>
+						</div>
 					</div>
-					<div class="item">
-						<img src="https://picsum.photos/id/252/985/845" class="w-100">
+				</div>
+				<div class="row habitacion py-3 color-gray">
+					<div class="col-md-7 s-img p-0">
+						<div class="carousel-habi">
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
+							</div>
+							<div class="item">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
-				<div class="font-upper">
-					<h2>jr suite</h2>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
-				<div class="date-h">
-					<h2>32 m<sup>2</sup></h2>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-				</div>
-				<div class="torre">
-					<p>Torre Ejecutiva</p>
-				</div>				
+					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+						<div class="font-upper">
+							<h2>jr suite</h2>
+						</div>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						</div>
+						<div class="date-h">
+							<h2>32 m<sup>2</sup></h2>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>
+						<div class="torre">
+							<p>Torre Ejecutiva</p>
+						</div>				
+					</div>
+				</div>	
 			</div>
 		</div>
 	</section>
 </div>
 <div class="quienes-somos pb-5 d-none">
 	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
-		<h1>Servicios</h1>
+		<h1>quienes somos</h1>
 	</section>
 	<section class="elegirnos bg-beige">
 		<div class="container">
@@ -430,10 +528,10 @@
 				<div class="col-md-6 py-5">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim qui, ullam vero, vitae quod nesciunt, quisquam nostrum atque voluptatem est distinctio exercitationem blanditiis tempora excepturi dignissimos aliquam, veritatis reprehenderit.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim qui, ullam vero, vitae quod nesciunt, quisquam nostrum atque voluptatem est distinctio exercitationem blanditiis tempora excepturi dignissimos aliquam, veritatis reprehenderit.</p>
-					 <ul>
-					 	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa id, ratione quibusdam necessitatibus amet sequi aspernatur adipisci ullam laborum sit quae saepe veritatis, sapiente incidunt nobis iste. Animi, officiis!</li>
-					 	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta libero aut dolores atque esse at ullam ipsam deserunt, nemo nostrum reprehenderit adipisci, doloremque animi laborum, ab voluptatibus, dolorem consequuntur temporibus.</li>
-					 </ul>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae culpa id, ratione quibusdam necessitatibus amet sequi aspernatur adipisci ullam laborum sit quae saepe veritatis, sapiente incidunt nobis iste. Animi, officiis!</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta libero aut dolores atque esse at ullam ipsam deserunt, nemo nostrum reprehenderit adipisci, doloremque animi laborum, ab voluptatibus, dolorem consequuntur temporibus.</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -504,5 +602,64 @@
 		</div>
 	</section>
 </div>
-
+<div class="galeria pb-5">
+	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(<?php echo get_template_directory_uri(); ?>/img/bn-galeria.jpg) no-repeat center center / cover;">
+		<h1>Galeria</h1>
+	</section>	
+	<div class="container">
+		<div class="filter">
+			<ul>
+				<li class="active"><a href="">TODO</a></li>
+				<li><a href="">SALA DE REUNION</a></li>
+				<li><a href="">HABITACIONES</a></li>
+				<li><a href="">ZONAS COMUNES</a></li>
+			</ul>
+		</div>
+		<section class="grid-galery">
+			<div class="row">
+				<div class="col-md-4 item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/1.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-md-8 item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/2.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/3.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-4 item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/4.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-3 item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/5.jpg" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/6.jpg" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/7.jpg" class="img-fluid">
+				</div>
+				<div class="col item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/8.jpg" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/9.jpg" class="img-fluid">
+				</div>
+				<div class="col item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/10.jpg" class="img-fluid">
+				</div>
+				<div class="col item-galery">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/11.jpg" class="img-fluid">
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
 <?php get_footer(); ?>

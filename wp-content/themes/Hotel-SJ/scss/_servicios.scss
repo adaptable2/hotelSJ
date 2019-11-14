@@ -48,9 +48,48 @@
 		}
 	}
 }
+.nav.nav-tabs.tabs-habitacion{
+	border: none;
+	li{
+		width: 50%;
+		text-align: center;
+		position: relative;
+		&:first-child{
+			&:after{
+				content: "";
+				width: 1px;
+				height: 60%;
+				background: $gray;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		a{
+			border:none;
+			color: $gray;
+			padding: 30px;
+			position: relative;
+			display: inline-block;
+			&.active{
+				&:after{
+					content: "";
+					width: 100%;
+					height: 2px;
+					background: $dorado;
+					display: block;
+					position: absolute;
+					bottom: 15px;
+					left: 0;
+				}
+			}
+		}
+	}
+}
 .habitacion{
 	position: relative;
-
 	.date-h{
 		padding: 0 30px;
 		h2{
@@ -84,7 +123,7 @@
 			display: inline-block;
 			&.slick-active{
 				button{
-					background: $azul;
+					background: $dorado;
 					border:none;
 				}
 			}
@@ -117,26 +156,33 @@
 		    color: #fff;
 		    padding: 10px 40px;
 		    bottom: 0;
+		    font-family: 'TwCenMT-Bold',system-ui;
 			p{
 				margin-bottom:0; 
 			}
+		}
+		.text{
+			p{
+				font-size: 20px;
+				line-height: 20px;
+			}
+		}
+		p{
+			font-size: 18px;
+			line-height: 1rem;
+			letter-spacing: 1px;
 		}
 	}
 	&:nth-of-type(even){
 		.torre{
 		    left: 0;
-		    transform: rotate(-90deg) translateX(70px) translateY(-70px);
+		    transform: rotate(-90deg) translateX(90px) translateY(-90px);
 		}
 		.s-text{
 			position: relative;
 			padding-left: 40px;
 			@media only screen and (min-width: 768px){
 				order: 0;
-			}
-			p{
-				font-size: 18px;
-				line-height: 1rem;
-				letter-spacing: 1px;
 			}
 			.btn-c{
 				text-align: right;
@@ -151,17 +197,13 @@
 	&:nth-of-type(odd){
 		.torre{
 		    right: 0;
-		    transform: rotate(-90deg) translateX(70px) translateY(70px);
+		    transform: rotate(-90deg) translateX(90px) translateY(90px);
+		    // transform: rotate(-90deg) translateX(70px) translateY(70px);
 		}
 		.s-text{
 			color: $gray;
 			position: relative;
 			padding-right: 40px;
-			p{
-				font-size: 18px;
-				line-height: 1rem;
-				letter-spacing: 1px;
-			}
 			.btn-c{
 				text-align: left;
 			}

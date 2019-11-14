@@ -47,11 +47,31 @@
 			nextArrow: '<button type="button" class="slick-next">></button>',
 			prevArrow: '<button type="button" class="slick-prev"><</button>'
 		});
-		$('.carousel-habi').slick({
-			nextArrow: '<button type="button" class="slick-next">></button>',
-			prevArrow: '<button type="button" class="slick-prev"><</button>',
-			dots: true
-		});
+		//carrusel de las habitaciones dentro de un tab
+
+		function slickInit(){
+			$('.carousel-habi').slick({
+				nextArrow: '<button type="button" class="slick-next">></button>',
+				prevArrow: '<button type="button" class="slick-prev"><</button>',
+				dots: true
+			});
+		}
+		slickInit();
+
+		  $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
+		    $(".carousel-habi").slick("unslick");
+		    slickInit();
+		  });
+
+		  // function myFunction() {
+		  //   var x = document.getElementById("myTopnav");
+		  //   if (x.className === "topnav") {
+		  //     x.className += " responsive";
+		  //   } else {
+		  //     x.className = "topnav";
+		  //   }
+		  // }
+		//carrusel de las habitaciones dentro de un tab
 		$('.footer-carousel').slick({
 			loop:true,
 			nextArrow: '<button type="button" class="slick-next">></button>',
