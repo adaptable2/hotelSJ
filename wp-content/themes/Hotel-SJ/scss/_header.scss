@@ -34,3 +34,33 @@
 	background: $vino;
 	display: block;
 }
+ul.sub-menu{
+	display: none;
+	width: auto;
+	position: absolute;
+	top: 100%;
+	z-index: 1;
+	background: white;
+	li{
+		display: block;
+		a{
+			padding: 20px 10px;
+		}
+		&:last-child{
+			@media only screen and (min-width: 992px){
+				padding-left: 0px;
+				padding-right: 0px; 
+			}
+			background: white;
+			a{
+				color: $gray;
+				padding: 20px 10px;
+			}
+		}
+	}
+}
+a:hover{
+	& + ul.sub-menu{
+		display: block;
+	}	
+}

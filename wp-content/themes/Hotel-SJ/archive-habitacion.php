@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 <div class="habitaciones pb-5">
-	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(https://picsum.photos/id/222/1366/400) no-repeat center center / cover;">
+	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(<?php echo get_template_directory_uri(); ?>/img/banner-in.jpg) no-repeat center center / cover;">
 		<h1>alojamiento</h1>
 	</section>
 	<section class="container ">
-
 		<ul class="nav nav-tabs tabs-habitacion">
 			<li class="nav-item">
 				<a class="nav-link active" data-toggle="tab" href="#torre1">Torre Antioquia</a>
@@ -38,8 +37,7 @@
 						<div class="font-upper">
 							<h2>jr suite</h2>
 						</div>
-						<div class="text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<div class="text font-roboto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
 						</div>
 						<div class="date-h">
@@ -75,7 +73,7 @@
 						<div class="font-upper">
 							<h2>jr suite</h2>
 						</div>
-						<div class="text">
+						<div class="text font-roboto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
 						</div>
 						<div class="date-h">
@@ -113,7 +111,7 @@
 						<div class="font-upper">
 							<h2>jr suite</h2>
 						</div>
-						<div class="text">
+						<div class="text font-roboto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
 						</div>
 						<div class="date-h">
@@ -149,7 +147,7 @@
 						<div class="font-upper">
 							<h2>jr suite</h2>
 						</div>
-						<div class="text">
+						<div class="text font-roboto">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
 						</div>
 						<div class="date-h">

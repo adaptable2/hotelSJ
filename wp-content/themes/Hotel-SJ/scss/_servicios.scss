@@ -92,6 +92,10 @@
 	position: relative;
 	.date-h{
 		padding: 0 30px;
+		font-size: 20px;
+		p{
+			margin-bottom: 2px;
+		}
 		h2{
 			margin-bottom: 20px;
 			border-bottom: solid 3px $gray;
@@ -162,14 +166,10 @@
 			}
 		}
 		.text{
-			p{
-				font-size: 20px;
-				line-height: 20px;
-			}
 		}
 		p{
-			font-size: 18px;
-			line-height: 1rem;
+			// font-size: 18px;
+			// line-height: 1rem;
 			letter-spacing: 1px;
 		}
 	}

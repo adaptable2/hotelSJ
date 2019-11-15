@@ -4,6 +4,9 @@ $azul:#33383D;
 $dorado: #B29D7F;
 $beige: #CFCCC5;
 $cafe:#AC9080;
+.banner-interna{
+	filter: grayscale(1);
+}
 .color{
 	&-white{
 		color: white;

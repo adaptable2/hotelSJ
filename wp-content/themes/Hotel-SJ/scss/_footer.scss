@@ -1,3 +1,11 @@
+.title-footer{	
+	h2{
+		border-bottom: solid 1px silver;
+		display: block;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+}
 footer{
 	background: $azul;
 	font-family: "AdobeArabic-Regular", system-ui;

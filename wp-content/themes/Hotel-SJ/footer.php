@@ -1,5 +1,5 @@
 			<!-- Formulario -->
-			<section class="formulario container-fluid">
+			<section class="formulario container-fluid" id="contacto">
 				<div class="row">
 					<div class="offset-md-0 col-md-6 offset-lg-2 col-lg-4 pb-3">
 						<h2>
@@ -36,7 +36,7 @@
 			<!-- footer -->
 			<div class="container-fluid">
 				<div class="row py-5">
-					<div class="col-md-12 font-arabic font-upper text-center py-3">
+					<div class="col-md-12 font-arabic font-upper text-center py-3 title-footer">
 						<h2>Comunidad digital</h2>
 					</div>
 					<div class="col-md-12">
