@@ -30,7 +30,48 @@
 				<li><a href="">ZONAS COMUNES</a></li>
 			</ul>
 		</div>
-		<section class="grid-galery">
+		<div class="masonry">
+		   <div class="item"><img src="https://picsum.photos/id/227/430/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/247/500/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/237/800/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/537/1200/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/437/300/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/337/500/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/247/600/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/237/200/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/247/700/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/235/300/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/247/900/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/236/1200/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/234/300/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/217/620/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/337/600/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/537/800/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/267/900/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/137/1200/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/237/200/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/257/1200/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/236/570/500" class="w-100"></div>
+		   <div class="item"><img src="https://picsum.photos/id/277/900/500" class="w-100"></div>
+		</div>
+		<div class="grid d-none">
+		  <div class="grid-item">
+		  	<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/1.jpg" class="w-100">
+		  </div>
+		  <div class="grid-item grid-item--width2">
+		  	<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/2.jpg" class="w-100">
+		  </div>
+		  <div class="grid-item">
+		  	<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/1.jpg" class="w-100">
+		  </div>
+		  <div class="grid-item">
+		  	<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/3.jpg" class="w-100">
+		  </div>
+		  <div class="grid-item grid-item--width2">
+		  	<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/2.jpg" class="w-100">
+		  </div>
+		</div>
+		<section class="grid-galery d-none">
 			<div class="row">
 				<div class="col-md-4 item-galery">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/galeria/1.jpg" alt="" class="img-fluid">

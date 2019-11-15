@@ -62,16 +62,6 @@
 		    $(".carousel-habi").slick("unslick");
 		    slickInit();
 		  });
-
-		  // function myFunction() {
-		  //   var x = document.getElementById("myTopnav");
-		  //   if (x.className === "topnav") {
-		  //     x.className += " responsive";
-		  //   } else {
-		  //     x.className = "topnav";
-		  //   }
-		  // }
-		//carrusel de las habitaciones dentro de un tab
 		$('.footer-carousel').slick({
 			loop:true,
 			nextArrow: '<button type="button" class="slick-next">></button>',
@@ -93,7 +83,5 @@
 			    }
 			  ]
 		});
-
 	});
-	
 })(jQuery, this);

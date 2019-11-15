@@ -75,14 +75,6 @@
 							</p>
 						</div>
 								<?php echo get_post_thumbnail_id($proyecto->ID, 'full');?>
-
-<!-- 						<div class="date-h">
-							<h2>32 m<sup>2</sup></h2>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-						</div> -->
 						<div class="torre font">
 							<p>Torre Antioquia</p>
 						</div>

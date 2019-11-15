@@ -50,7 +50,7 @@
 					</div>				
 				</div>
 			</div>
-			<a href="" class="wp"></a>
+			<a href="https://api.whatsapp.com/send?phone=573147931996" class="wp"></a>
 			<footer class="footer py-5" role="contentinfo">
 				<div class="container">
 					<div class="row color-white">
@@ -83,8 +83,8 @@
 									?>
 									<?php
 								endforeach;
-							endif; 
-							?>
+								endif; 
+								?>
 							<div class="form-footer">
 								<?php echo $correo_desc;?>
 							</div>
@@ -112,14 +112,13 @@
 			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" async>
 			<?php wp_footer(); ?>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js" defer></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.js" defer></script>
 			<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-        	assets: '<?php echo get_template_directory_uri(); ?>',
-        	tests: {}
-        });
-    </script>
+	        conditionizr.config({
+	        	assets: '<?php echo get_template_directory_uri(); ?>',
+	        	tests: {}
+	        });
+	    	</script>
 </body>
 </html>
