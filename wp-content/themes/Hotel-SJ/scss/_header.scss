@@ -38,13 +38,16 @@ ul.sub-menu{
 	display: none;
 	width: auto;
 	position: absolute;
-	top: 100%;
+	top: 70%;
 	z-index: 1;
 	background: white;
+	&:hover{
+		display: block;
+	}
 	li{
 		display: block;
 		a{
-			padding: 20px 10px;
+			padding: 10px 15px;
 		}
 		&:last-child{
 			@media only screen and (min-width: 992px){

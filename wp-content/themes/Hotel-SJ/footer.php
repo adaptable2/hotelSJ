@@ -50,6 +50,7 @@
 					</div>				
 				</div>
 			</div>
+			<a href="" class="wp"></a>
 			<footer class="footer py-5" role="contentinfo">
 				<div class="container">
 					<div class="row color-white">
