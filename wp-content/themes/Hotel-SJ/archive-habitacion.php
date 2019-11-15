@@ -23,178 +23,102 @@
 	endif; 
 	?>
 	<section class="container ">
+		<?php  
+			$torres = get_terms( array(
+    		'taxonomy' => 'torre',
+    		'hide_empty' => false,
+    	));
+		?>
 		<ul class="nav nav-tabs tabs-habitacion">
-			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#torre1">Torre Antioquia</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#torre2">Torre ejecutiva</a>
-			</li>
+			<?php
+				$i = 0;
+				foreach ($torres as $torre):		
+			?>
+				<li class="nav-item">
+					<a class="nav-link <?php echo ($i == 0) ? 'active' : ''; ?>" data-toggle="tab" href="#<?php echo $torre->slug; ?>"><?php echo $torre->name; ?></a>
+				</li>
+			<?php
+			 $i ++;
+				endforeach;
+			?>
 		</ul>
 
 		<!-- Tab panes -->
 		<div class="tab-content">
-			<div class="tab-pane container active" id="torre1">
+			<?php  
+				$torres = get_terms( array(
+	    		'taxonomy' => 'torre',
+	    		'hide_empty' => false,
+	    	));
+	    	$j = 0;
+	    	foreach ($torres as $torre):
+			?>
+				<div class="tab-pane container <?php echo ($j == 0) ? 'active' : ''; ?> ?>" id="<?php echo $torre->slug; ?>">
 				<?php
-				    	// Argumentos para una busqueda de post type
-				$args = array(
-							'post_type' => 'habitacion', // Nombre del post type
-							'order' => 'ASC',
-						);
-				$habitaciones = new WP_Query($args);
-				if ($habitaciones->posts):
-				      // Foreach para recorrer el resultado de la busqueda
-					foreach ($habitaciones->posts as $habitacion):
-			 	 	 	$habitacion_name = $habitacion->post_title;
-						$habitacion_desc = $habitacion->post_content;
-				?>
-				<div class="row habitacion py-3 color-gray">
-					<div class="col-md-7 s-img p-0">
-						<div class="carousel-habi">
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
+        // Argumentos para una busqueda de post type
+	        $args = array(
+	          'post_type' => 'habitacion', // Nombre del post type
+	          'order' => 'ASC',
+	          'torre' => $torre->slug
+	        );
+        	$habitaciones = new WP_Query($args);
+        	if ($habitaciones->posts):
+        	// Foreach para recorrer el resultado de la busqueda
+          	foreach ($habitaciones->posts as $habitacion):
+	            $habitacion_name = $habitacion->post_title;
+	            $habitacion_desc = $habitacion->post_content;
+      	?>
+							<div class="row habitacion py-3 color-gray">
+								<div class="col-md-7 s-img p-0">
+									<?php  
+										$argsImages = array(
+							        'post_parent'    => $habitacion->ID,
+							        'post_type'      => 'attachment',
+							        'numberposts'    => -1, // show all
+							        'post_mime_type' => 'image',
+							        'exclude'        =>  get_post_thumbnail_id($habitacion->ID),
+							        'orderby'        => 'menu_order',
+							        'order'          => 'ASC'
+		       					);
+										$images = get_posts($argsImages);
+										if($images):
+									?>
+									<div class="carousel-habi">
+										<?php  
+											foreach($images as $image):
+										?>
+												<div class="item">
+													<img src="<?php echo $image->guid; ?>" class="w-100">
+												</div>
+										<?php  
+											endforeach;
+										?>
+									</div>
+								<?php endif; ?>
+								</div>
+								<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
+									<div class="font-upper">
+										<h2><?php echo $habitacion_name;?></h2>
+									</div>
+									<div class="text font-roboto">
+										<p>
+											<?php echo $habitacion_desc;?>								
+										</p>
+									</div>
+									<div class="torre font">
+										<p><?php echo $torre->name; ?></p>
+									</div>
+								</div>
 							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
-						<div class="font-upper">
-							<h2><?php echo $habitacion_name;?></h2>
-						</div>
-						<div class="text font-roboto">
-							<p>
-								<?php echo $habitacion_desc;?>								
-							</p>
-						</div>
-								<?php echo get_post_thumbnail_id($proyecto->ID, 'full');?>
-						<div class="torre font">
-							<p>Torre Antioquia</p>
-						</div>
-					</div>
+						<?php  
+							endforeach;
+						endif;
+						?>
 				</div>
-				<?php
+			<?php  
+				$j ++;
 				endforeach;
-				endif; 
-				?>
-				<!--<div class="row habitacion py-3 color-gray">
-					<div class="col-md-7 s-img p-0">
-						<div class="carousel-habi">
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
-						<div class="font-upper">
-							<h2>jr suite</h2>
-						</div>
-						<div class="text font-roboto">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
-						</div>
-						<div class="date-h">
-							<h2>32 m<sup>2</sup></h2>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-						</div>
-						<div class="torre">
-							<p>Torre Antioquia</p>
-						</div>				
-					</div>
-				</div>-->
-			</div>
-			<div class="tab-pane container" id="torre2">
-				<div class="row habitacion py-3 color-gray">
-					<div class="col-md-7 s-img p-0">
-						<div class="carousel-habi">
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
-						<div class="font-upper">
-							<h2>jr suite</h2>
-						</div>
-						<div class="text font-roboto">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
-						</div>
-						<div class="date-h">
-							<h2>32 m<sup>2</sup></h2>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-						</div>
-						<div class="torre font">
-							<p>Torre Ejecutiva</p>
-						</div>
-					</div>
-				</div>
-				<div class="row habitacion py-3 color-gray">
-					<div class="col-md-7 s-img p-0">
-						<div class="carousel-habi">
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion3.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion1.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion2.jpg" class="w-100">
-							</div>
-							<div class="item">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/habitacion4.jpg" class="w-100">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
-						<div class="font-upper">
-							<h2>jr suite</h2>
-						</div>
-						<div class="text font-roboto">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
-						</div>
-						<div class="date-h">
-							<h2>32 m<sup>2</sup></h2>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-							<p>Lorem ipsum dolor sit amet</p>
-						</div>
-						<div class="torre">
-							<p>Torre Ejecutiva</p>
-						</div>				
-					</div>
-				</div>	
-			</div>
+			?>
 		</div>
 	</section>
 </div>
