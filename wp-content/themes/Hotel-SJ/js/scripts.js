@@ -96,8 +96,13 @@
 
 		// init Isotope
 		var $grid = $('.grid').isotope({
-		  itemSelector: '.element-item',
-		  layoutMode: 'fitRows'
+		  itemSelector: '.grid-item',
+		  percentPosition: true,
+  		masonry: {
+    	// use outer width of grid-sizer for columnWidth
+    		columnWidth: 100
+  			// horizontalOrder: true
+  		}
 		});
 
 		// bind filter button click
