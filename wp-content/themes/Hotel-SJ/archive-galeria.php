@@ -59,6 +59,7 @@
 		if ($galerias->posts):
 	?>
 		<div class="grid grid-galery">
+      <div class="grid-sizer"></div>
 	<?php
 			foreach ($galerias->posts as $galeria):
 				$galeria_name = $galeria->post_title;
@@ -77,7 +78,7 @@
 				if($images):
 					foreach($images as $image):						
 	?>
-						<div class="element-item <?php echo $galeria_slug; ?>" data-category="<?php echo $galeria_slug; ?>">
+						<div class="grid-item <?php echo $galeria_slug; ?>" data-category="<?php echo $galeria_slug; ?>">
 							<a data-fancybox="<?php echo $galeria_slug; ?>" href="<?php echo $image->guid; ?>">
 								<img src="<?php echo $image->guid; ?>">
 							</a>
