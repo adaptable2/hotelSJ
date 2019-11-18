@@ -80,7 +80,7 @@
 	?>
 						<div class="grid-item <?php echo $galeria_slug; ?>" data-category="<?php echo $galeria_slug; ?>">
 							<a data-fancybox="<?php echo $galeria_slug; ?>" href="<?php echo $image->guid; ?>">
-								<img src="<?php echo $image->guid; ?>">
+								<img src="<?php echo $image->guid; ?>" class="w-100">
 							</a>
 						</div>
 	<?php  

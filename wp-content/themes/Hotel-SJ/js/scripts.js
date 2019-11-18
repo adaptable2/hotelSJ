@@ -89,8 +89,9 @@
 		  percentPosition: true,
   		masonry: {
     	// use outer width of grid-sizer for columnWidth
-    		columnWidth: 100
-  			// horizontalOrder: true
+    		columnWidth: 350,
+    		gutter: 20,
+  			horizontalOrder: true
   		}
 		});
 
