@@ -22,7 +22,12 @@
 						endif; 
 						?>
 						<div class="form">
-							<?php echo $correo_form;?>
+							<!--<?php echo $correo_form;?>-->
+							<div role="main" id="contacto-sitio-web-569d5c4ed4956655d181"></div>
+							<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+							<script type="text/javascript">
+							 new RDStationForms('contacto-sitio-web-569d5c4ed4956655d181-html', 'UA-146093982-1').createForm();
+							</script>
 						</div>
 					</div>
 					<div class="col-md-6 p-0">
@@ -89,13 +94,14 @@
 								<?php echo $correo_desc;?>
 							</div>
 							<ul class="redes">
-								<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/fb.png" alt="" class="img-fluid"></a></li>
-								<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/tw.png" alt="" class="img-fluid"></a></li>
-								<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/ig.png" alt="" class="img-fluid"></a></li>
+								<li><a href="https://www.facebook.com/elportonsj/"><img src="<?php echo get_template_directory_uri(); ?>/img/fb.png" alt="" class="img-fluid"></a></li>
+								<!--<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/tw.png" alt="" class="img-fluid"></a></li>-->
+								<li><a href="https://www.instagram.com/elportonsj/"><img src="<?php echo get_template_directory_uri(); ?>/img/ig.png" alt="" class="img-fluid"></a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-12 color-white d-flex justify-content-between pt-3 mt-3 copy flex-column flex-lg-row">
+						<div class="rnt">RNT 12993</div>
 						<p> 
 							<a href="WWW.HOTELELPORTONDESANJUAQUIN.COM">WWW.HOTELELPORTONDESANJUAQUIN.COM</a>
 						</p>

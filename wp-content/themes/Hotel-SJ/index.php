@@ -74,13 +74,13 @@
 					<p class="font-arabic">
 						“El hotel es muy bonito y cómodo, la atención es excelente sobretodo Camilo que es muy diligente. La comida es muy buena y a excelente precio. Tienen mapas y opciones de tour por Medellín. Lo recomiendo es en realidad optimo”
 					</p>
-					<h5>angel gabriel g</h5>
+					<h5>Angel gabriel g</h5>
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
-					<h2>ME ENCANTO</h2>
+					<h2>"ME ENCANTO"</h2>
 					<p class="font-arabic">“Excelente hotel...... excelente vista........ me encanto mucho el personal muy servicial y muy amable mil gracias..... Las habitaciones son muy cómodas..... Esta ubicado en un buen sector el desayuno muy agradable”</p>
-					<h5>johana</h5>
+					<h5>Johana</h5>
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>

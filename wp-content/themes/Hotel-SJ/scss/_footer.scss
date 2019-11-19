@@ -16,6 +16,15 @@
     right: 20px;
     z-index: 3;
 }
+.rnt{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -44px;
+	padding: 10px;
+	background: white;
+	color:$azul;
+}
 footer{
 	background: $azul;
 	font-family: "AdobeArabic-Regular", system-ui;
