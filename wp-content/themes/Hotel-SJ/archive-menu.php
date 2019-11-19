@@ -22,10 +22,8 @@
 	endif; 
 	?>
 	<div class="container">
-		<div class="filter">
-			<ul>
-				<li class="active"><a href="">RESTAURANTE</a></li>
-			</ul>
+		<div class="button-group">
+			<button class="is-checked">RESTAURANTE</button>
 		</div>
 		<section class="grid-galery">
 			<div class="row">

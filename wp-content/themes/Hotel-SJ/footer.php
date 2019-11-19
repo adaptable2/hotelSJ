@@ -41,11 +41,11 @@
 					</div>
 					<div class="col-md-12">
 						<div class="footer-carousel">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/ambiente.svg">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/cotelco.svg">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/codeorg.svg">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/turi.svg">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/bureau.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/ambiente.svg" class="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/cotelco.svg" class="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/codeorg.svg" class="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/turi.svg" class="lazy">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/bureau.svg" class="lazy">
 						</div>
 					</div>				
 				</div>
@@ -68,7 +68,7 @@
 						</div>
 						<div class="col-md-4">
 							<h4>PODEMOS MANTENERTE INFORMADO</h4>
-							<p class="color-dorado">Lorem ipsum dolor sit amet, consectetuer adipis </p>
+							<p class="color-dorado">Entérate de nuestras ofertas y eventos.</p>
 							<?php 
 	                    // Argumentos para una busqueda de post type
 							$args = array(
@@ -106,17 +106,16 @@
 				</div>
 			</footer>
 			<!-- /footer -->
-
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" async>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" async>
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" async/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" async/>
+			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" async/>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" async/>
 	 		<?php wp_footer(); ?>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js" defer></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" defer></script>
+			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
+			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
 			<script>
 	        conditionizr.config({
 	        	assets: '<?php echo get_template_directory_uri(); ?>',

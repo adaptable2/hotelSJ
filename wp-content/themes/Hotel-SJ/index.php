@@ -66,25 +66,27 @@
 		<div class="container">
 			<div class="row align-items-stretch">
 				<div class="col-12 text-center pb-5">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png" class="lazy">
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
 					<h2>EXCELENTE</h2>
-					<p class="font-arabic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ab, vero. Ea a eius cupiditate perferendis molestias sapiente eos nemo, beatae, itaque corrupti. Quaerat voluptate repudiandae, accusantium, iste alias asperiores.</p>
-					<h5>Camilo Catañeda</h5>
+					<p class="font-arabic">
+						“El hotel es muy bonito y cómodo, la atención es excelente sobretodo Camilo que es muy diligente. La comida es muy buena y a excelente precio. Tienen mapas y opciones de tour por Medellín. Lo recomiendo es en realidad optimo”
+					</p>
+					<h5>angel gabriel g</h5>
+				</div>
+				<div class="col-md-4 item-trip">
+					<div class="star"></div>
+					<h2>ME ENCANTO</h2>
+					<p class="font-arabic">“Excelente hotel...... excelente vista........ me encanto mucho el personal muy servicial y muy amable mil gracias..... Las habitaciones son muy cómodas..... Esta ubicado en un buen sector el desayuno muy agradable”</p>
+					<h5>johana</h5>
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
 					<h2>EXCELENTE</h2>
-					<p class="font-arabic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eum sit autem. Delectus harum quasi incidunt cum ex consequatur voluptatem fugit, maxime cumque odio sit voluptas error ratione, nihil voluptates.</p>
-					<h5>Camilo Catañeda</h5>
-				</div>
-				<div class="col-md-4 item-trip">
-					<div class="star"></div>
-					<h2>EXCELENTE</h2>
-					<p class="font-arabic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, consequuntur illum ipsum, iusto accusantium voluptatem fugit velit assumenda, distinctio cum ea voluptatibus! Recusandae modi velit officia voluptas quae qui aut.</p>
-					<h5>Camilo Catañeda</h5>
+					<p class="font-arabic">“Un hotel con habitaciones amplias, nuevas y comodisimas. La atención del personal es excelente, siempre amables y listos para ayudar en todo lo que pueden. Llegué muy temprano al check in y rápida mente solucionaron todo para que pudiera acceder a mi habitación. Lo mismo en el restaurante y bar. La limpieza impecable.”</p>
+					<h5>SebasBarros</h5>
 				</div>
 			</div>
 		</div>
@@ -128,7 +130,7 @@
 		</div>
 		<div class="row">
 			<div class="offset-lg-1 col-lg-4 img-one d-flex justify-content-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/nosotros1.png" alt="" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/nosotros1.png" class="lazy img-fluid">
 			</div>
 			<div class="col-lg-6 d-flex align-items-center">
 				<div class="row text-center color-gray">
@@ -147,7 +149,7 @@
 							$item_img = wp_get_attachment_url( get_post_thumbnail_id($item->ID, 'full') );
 							?>				
 							<div class="col-md-4 item-icon">
-								<img src="<?php echo $item_img; ?>" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo $item_img; ?>" class=" lazy">
 								<p><?php echo $item_desc;?></p>
 							</div>
 							<?php
@@ -177,7 +179,7 @@
 							$item_img = wp_get_attachment_url( get_post_thumbnail_id($item->ID, 'full') );
 							?>				
 							<div class="col-md-4 item-icon">
-								<img src="<?php echo $item_img; ?>" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo $item_img; ?>" class=" lazy">
 								<p><?php echo $item_desc;?></p>
 							</div>
 							<?php
@@ -187,7 +189,7 @@
 				</div>
 			</div>
 			<div class="col-lg-5 pr-lg-0 img-two order-0 order-lg-1">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/nosotros2.png" alt="" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/nosotros2.png" class="img-fluid lazy">
 			</div>
 		</div>
 	</section>
@@ -217,7 +219,7 @@
 					
 					<div class="col-6 col-md p-0 galeria-item d-flex">
 						<a href="<?php echo $servicio_url; ?>">
-							<img src="<?php echo $servicio_img; ?>" alt="" class="w-100">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo $servicio_img; ?>" alt="" class="w-100 lazy">
 						</a>
 						<div class="titulo">
 							<a href="<?php echo $servicio_url; ?>">
@@ -255,8 +257,8 @@
 
 					?>
 					<div class="col-6 col-md p-0 galeria-item d-flex">
-						<a href="http://actividadcreativa.co/hotelSJ/galeria">
-							<img src="<?php echo $galeria_img; ?>" alt="" class="w-100">
+						<a href="http://actividadcreativa.co/hotelSJ/galeria" class="d-block w-100">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo $galeria_img; ?>" alt="" class="w-100 lazy">
 						</a>
 						<div class="titulo">
 							<a href="http://actividadcreativa.co/hotelSJ/galeria"><p><?php echo $galeria_name;?></p></a>
