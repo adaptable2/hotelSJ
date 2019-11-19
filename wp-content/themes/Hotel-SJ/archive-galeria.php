@@ -59,7 +59,6 @@
 		if ($galerias->posts):
 	?>
 		<div class="grid grid-galery">
-      <div class="grid-sizer"></div>
 	<?php
 			foreach ($galerias->posts as $galeria):
 				$galeria_name = $galeria->post_title;
