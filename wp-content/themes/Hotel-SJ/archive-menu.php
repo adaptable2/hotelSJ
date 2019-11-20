@@ -39,6 +39,16 @@
       <?php endforeach; ?>
       </div>
   <?php endif; ?>
+    <div class="row py-5">
+      <div class="offset-md-2 col-md-4 text-center text-md-right logo-restaurante pr-md-5">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/restaurante-logo.png" alt="" class="img-fluid d-inline-block">
+      </div>
+      <div class="col-md-4 pl-md-5">
+        <p>
+          Deleita tu paladar en un espacio acogedor, atractivo y de decoración sutil, donde  podrás disfrutar de una gran variedad de platos, bebidas y pasabocas tipo gourmet e internacionales.
+        </p>
+      </div>
+    </div>
     <section class="grid grid-galery">
       <?php 
         $args = array(

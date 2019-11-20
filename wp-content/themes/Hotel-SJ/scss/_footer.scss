@@ -37,6 +37,7 @@ footer{
 			display: flex;
 			span{
 				display: flex;
+				flex-direction: column;
 			}
 		}
 		input{
@@ -44,9 +45,6 @@ footer{
 			border: solid 1px white;
 			color: white;
 			padding-left: 15px;
-		}
-		input[type="email"]{
-			width: 100%;
 		}
 		input[type="submit"]{
 			border: solid 1px white;
@@ -58,7 +56,23 @@ footer{
 			padding-left: 13px;
 			padding-right: 13px;
 			height: 100%;
+			max-height: 38px;
 		}
+		input[type="email"]{
+			width: 100%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			max-height: 38px;
+		}
+	}
+	div.wpcf7-validation-errors{
+		border-color: $dorado;
+	}
+	div.wpcf7-response-output{
+		margin: 10px 0;
+	}
+	span.wpcf7-not-valid-tip{
+		color: $vino;
 	}
 	div.wpcf7 {
 		.ajax-loader{
@@ -101,9 +115,11 @@ footer{
 			padding-left: 15px;
 			display: block;
 			position: relative;
-
 			&:hover{
 				color: white;
+				 + ul.sub-menu{
+					display: none;
+				}
 			}
 			&:after{
 				content: "";

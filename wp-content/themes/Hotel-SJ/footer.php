@@ -5,24 +5,7 @@
 						<h2>
 							UBICACIÓN
 						</h2>
-						<?php
-	                    // Argumentos para una busqueda de post type
-						$args = array(
-								'post_type' => 'footer-form', // Nombre del post type
-								'order' => 'ASC'
-							);
-						$correos = new WP_Query($args);
-						if ($correos->posts):
-	                      // Foreach para recorrer el resultado de la busqueda
-							foreach ($correos->posts as $correo):
-								$correo_form = $correo->code_form;
-								?>
-								<?php
-							endforeach;
-						endif; 
-						?>
 						<div class="form">
-							<!--<?php echo $correo_form;?>-->
 							<div role="main" id="contacto-sitio-web-569d5c4ed4956655d181"></div>
 							<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
 							<script type="text/javascript">
@@ -32,7 +15,8 @@
 					</div>
 					<div class="col-md-6 p-0">
 						<div class='v-and-m-responsive'>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1261458909084!2d-75.58733220365534!3d6.247103115631619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a7b84750b7%3A0x431e906a65d39a67!2sCl.%2042%20%2368a-32%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1572628810810!5m2!1ses!2sco" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							<div id="map" class="map-js"></div>
+							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1261458909084!2d-75.58733220365534!3d6.247103115631619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a7b84750b7%3A0x431e906a65d39a67!2sCl.%2042%20%2368a-32%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1572628810810!5m2!1ses!2sco" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
 						</div>
 					</div>
 				</div>
@@ -60,12 +44,12 @@
 				<div class="container">
 					<div class="row color-white">
 						<div class="col-md-1 p-md-0 col-lg-2 d-flex align-items-center justify-content-center">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png" alt="logo" class="img-fluid">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png" alt="logo" class="img-fluid lazy">
 						</div>
 						<div class="col-md-5 col-lg-4 datos">
 							<p class="ubi">Calle 42 # 68a - 32 <span class="d-block">Medellín - Colombia</span></p>
 							<p class="tel">+57 (4) 4444008</p>
-							<p class="email">Hotelportondesanjaquin@ifo.com.co</p>
+							<p class="email">reservas@hotelportonsj.com.co</p>
 							<p class="chat">M.Me/hotelportondesanjoaquin</p>
 						</div>
 						<div class="col-md-2 menu-footer p-md-0">
@@ -94,9 +78,21 @@
 								<?php echo $correo_desc;?>
 							</div>
 							<ul class="redes">
-								<li><a href="https://www.facebook.com/elportonsj/"><img src="<?php echo get_template_directory_uri(); ?>/img/fb.png" alt="" class="img-fluid"></a></li>
-								<!--<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/tw.png" alt="" class="img-fluid"></a></li>-->
-								<li><a href="https://www.instagram.com/elportonsj/"><img src="<?php echo get_template_directory_uri(); ?>/img/ig.png" alt="" class="img-fluid"></a></li>
+								<li>
+									<a href="https://www.facebook.com/elportonsj/">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/fb.png" alt="facebook" class="img-fluid lazy">
+									</a>
+								</li>
+								<!--<li>
+									<a href="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/tw.png" alt="" class="img-fluid">
+									</a>
+								</li>-->
+								<li>
+									<a href="https://www.instagram.com/elportonsj/">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/ig.png" alt="instagram" class="img-fluid lazy">
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -114,13 +110,14 @@
 			<!-- /footer -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" async/>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" async/>
-			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" async/>
+			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="preload" async/>
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" async/>
 	 		<?php wp_footer(); ?>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js" defer></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tg95tRLV0b3omGIVAB3gD7WXVyjCNSU" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
 			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
-			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
+			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
 			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
 			<script>
 	        conditionizr.config({

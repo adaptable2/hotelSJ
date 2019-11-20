@@ -100,6 +100,23 @@
 		  var filterValue = $( this ).attr('data-filter');
 		  $grid.isotope({ filter: filterValue });
 		});
+		
+	    //map
+	    function iniciarMap(){
+		    var coord = {lat: 6.2374437 ,lng: -75.5901287};
+		    var icono = 'http://actividadcreativa.co/dixo/wp-content/uploads/2019/08/mapa.png';
+		    var map = new google.maps.Map(document.getElementById('map'),{
+		      zoom: 20,
+		      center: coord
+		    });
+		    var marker = new google.maps.Marker({
+		      position: coord,
+		      map: map,
+		      icon: icono
+		    });
+		}
+		iniciarMap();
+
 	});
 })(jQuery, this);
 

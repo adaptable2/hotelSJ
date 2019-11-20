@@ -25,7 +25,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="title-quienes bg-cafe col-md-4 d-flex align-items-center justify-content-center font-arabic py-5">
-					<h2>Porque elegirnos</h2>
+					<h2>¿Porqué elegirnos?</h2>
 				</div>
 				<div class="col-md-6 py-5">
 					<p>En el Hotel Portón de San Joaquín contamos con 90 habitaciones, distribuidas en dos espectaculares torres: Antioquia y Ejecutiva, 2 salones para eventos, una sala de juntas, sauna, turco y gimnasio.</p>
@@ -34,7 +34,7 @@
 					<p>¿Qué esperas? Nuestras instalaciones son amplias, elegantes, de diseño sobrio, decoración sutil y buen gusto. Somos el hotel que piensa en ti. </p>
 					<ul>
 						<li>
-							<p><strong>TORRE EXPRESS</strong></p>
+							<p><strong>TORRE ANTIOQUÍA</strong></p>
 							38 habitaciones. Un espacio acogedor e inspirado en la cultura paisa; a través de sus paredes le rinde homenaje a los territorios más emblemáticos del departamento antioqueño. Es ideal para alojamientos de períodos cortos. Es de fácil acceso y cerca al lobby. 
 						</li>
 						<li>
@@ -79,9 +79,8 @@
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/calendario.png" alt="">
-							<p>Dotados con ayudas audiovisuales, proyector y silletería.</p>
+							<p>Salones dotados con ayudas audiovisuales, proyector y silletería.</p>
 						</div>
-						
 					</div>
 				</div>
 			</div>

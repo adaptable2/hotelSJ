@@ -46,3 +46,17 @@ html{scroll-behavior: smooth;}
 		margin-bottom: 20px;
 	}
 }
+.logo-restaurante{
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background:$gray;
+		height: 80%;
+		width: 2px;
+		display: block;
+	}
+}

@@ -195,7 +195,7 @@
 	</section>
 	<!-- nosotros -->
 	<!-- servicios -->
-	<section class="servicios container-fluid pb-5">
+	<section class="servicios container-fluid pb-5" id="servicios">
 		<div class="row">
 			<div class="title-separate col-12 col-lg-6 text-center">
 				<h2>Servicios</h2>
