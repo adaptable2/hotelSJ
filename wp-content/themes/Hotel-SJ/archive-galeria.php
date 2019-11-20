@@ -32,7 +32,7 @@
 		if ($galerias->posts):
 	?>
 		<div id="filters" class="button-group">
-			<button class="button is-checked" data-filter="*">show all</button>
+			<button class="button is-checked" data-filter="*">VER TODOS</button>
 				<?php  
 					// Foreach para recorrer el resultado de la busqueda
 					foreach ($galerias->posts as $galeria):

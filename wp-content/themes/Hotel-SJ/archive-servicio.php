@@ -31,12 +31,9 @@
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/lavadora-ser.png" class="img-fluid">
 						<div class="font-upper">
-							<h2>camilo</h2>
+							<h2>SERVICIO DE LAVANDERÍA</h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
-						<div class="d-block btn-c pt-5">
-							<a href="" class="btn bg-dorado d-inline-block">más información</a>
-						</div>
+						<p>Un equipo calificado deja tus prendas de forma óptima.</p>
 					</div>
 				</div>
 			</div>
@@ -50,11 +47,11 @@
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/canasta.png" alt="">
 						<div class="font-upper">
-							<h2>ALOJAMIENTO EXPRESS</h2>
+							<h2>SERVICIO DE ALOJAMIENTO</h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<p>90 habitaciones cómodas y bien dotadas.</p>
 						<div class="d-block btn-c pt-5">
-							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
 					</div>
 				</div>
@@ -69,11 +66,11 @@
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/gym-w.png" alt="">
 						<div class="font-upper">
-							<h2>camilo</h2>
+							<h2>BAR Y RESTAURANTE</h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<p>Dos espacios agradables y acogedores, con bebidas especiales y platos tipo gourmet e internacionales.</p>
 						<div class="d-block btn-c pt-5">
-							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
 					</div>
 				</div>
@@ -88,11 +85,49 @@
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wifi-a.png" alt="">
 						<div class="font-upper">
+							<h2>INTERNET</h2>
+						</div>
+						<p>Conexión gratuita y de alta velocidad con cobertura en todas las áreas del Hotel.</p>
+						<div class="d-block btn-c pt-5">
+							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row servicio">
+			<div class="col-md-6 s-img p-0">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/minibar.png" class="w-100">
+			</div>
+			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
+				<div class="row">
+					<div class="col-xl-6 col-md-8 py-5">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/iconnevera.png" alt="">
+						<div class="font-upper">
 							<h2>ALOJAMIENTO EXPRESS</h2>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore numquam facere atque delectus quis nisi iste dolor accusantium odit maxime alias molestias ratione itaque fugiat nobis reiciendis, maiores tempora!</p>
+						<p>Cerca al centro de la ciudad, restaurantes, universidades, zona rosa, universidades y entidades bancarias.</p>
 						<div class="d-block btn-c pt-5">
-							<a href="" class="btn bg-dorado d-inline-block">más información</a>
+							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row servicio">
+			<div class="col-md-6 s-img p-0">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/i-wifi.png" class="w-100">
+			</div>
+			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
+				<div class="row">
+					<div class="col-xl-6 col-md-8 py-5">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/wifi-a.png" alt="">
+						<div class="font-upper">
+							<h2>PARQUEADERO</h2>
+						</div>
+						<p>A través de celdas y sujeto a disponibilidad.</p>
+						<div class="d-block btn-c pt-5">
+							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
 					</div>
 				</div>
