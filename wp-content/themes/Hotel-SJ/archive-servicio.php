@@ -24,7 +24,7 @@
 	<section class="container-fluid">
 		<div class="row servicio">
 			<div class="col-md-6 s-img p-0">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/plancha.jpg" class="w-100">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/plancha.png" class="w-100">
 			</div>
 			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
 				<div class="row">
@@ -33,23 +33,23 @@
 						<div class="font-upper">
 							<h2>SERVICIO DE LAVANDERÍA</h2>
 						</div>
-						<p>Un equipo calificado deja tus prendas de forma óptima.</p>
+						<p>Manos expertas que siempre están disponibles para dejar tus prendas de manera óptima mientras sales a conquistar tus sueños.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row servicio">
 			<div class="col-md-6 s-img p-0">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/turco.jpg" class="w-100">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/turco.png" class="w-100">
 			</div>
 			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
 				<div class="row">
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/canasta.png" alt="">
 						<div class="font-upper">
-							<h2>SERVICIO DE ALOJAMIENTO</h2>
+							<h2>SAUNA Y TURCO</h2>
 						</div>
-						<p>90 habitaciones cómodas y bien dotadas.</p>
+						<p>Vive momentos relajantes en nuestra zona húmeda, un espacio cargado de confort y tranquilidad para recargar energías.</p>
 						<div class="d-block btn-c pt-5">
 							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
@@ -59,16 +59,16 @@
 		</div>
 		<div class="row servicio">
 			<div class="col-md-6 s-img p-0">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/gym.jpg" class="w-100">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/gym.png" class="w-100">
 			</div>
 			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
 				<div class="row">
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/gym-w.png" alt="">
 						<div class="font-upper">
-							<h2>BAR Y RESTAURANTE</h2>
+							<h2>GIMNASIO</h2>
 						</div>
-						<p>Dos espacios agradables y acogedores, con bebidas especiales y platos tipo gourmet e internacionales.</p>
+						<p>Tu rutina no tiene por qué cambiar. Sigue</p>
 						<div class="d-block btn-c pt-5">
 							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
@@ -78,16 +78,16 @@
 		</div>
 		<div class="row servicio">
 			<div class="col-md-6 s-img p-0">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/sala-i.jpg" class="w-100">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/sala-i.png" class="w-100">
 			</div>
 			<div class="col-md-6 s-text font-arabic d-flex justify-content-center flex-column text-center">
 				<div class="row">
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wifi-a.png" alt="">
 						<div class="font-upper">
-							<h2>INTERNET</h2>
+							<h2>CENTRO EJECUTIVO</h2>
 						</div>
-						<p>Conexión gratuita y de alta velocidad con cobertura en todas las áreas del Hotel.</p>
+						<p>Sala adecuada para la utilización de servicios de cómputo, dotada con computadores para los huéspedes.</p>
 						<div class="d-block btn-c pt-5">
 							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
@@ -104,9 +104,9 @@
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/iconnevera.png" alt="">
 						<div class="font-upper">
-							<h2>ALOJAMIENTO EXPRESS</h2>
+							<h2>MINIBAR</h2>
 						</div>
-						<p>Cerca al centro de la ciudad, restaurantes, universidades, zona rosa, universidades y entidades bancarias.</p>
+						<p>Al interior de las habitaciones, los huéspedes pueden acceder a snacks y bebidas con y sin alcohol.</p>
 						<div class="d-block btn-c pt-5">
 							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>
@@ -123,9 +123,9 @@
 					<div class="col-xl-6 col-md-8 py-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wifi-a.png" alt="">
 						<div class="font-upper">
-							<h2>PARQUEADERO</h2>
+							<h2>INTERNET</h2>
 						</div>
-						<p>A través de celdas y sujeto a disponibilidad.</p>
+						<p>El servicio de Wifi puede ser utilizado desde cualquier dispositivo móvil y cuenta con una velocidad alta que puede ser disfrutada desde los diferentes espacios al interior del Hotel.</p>
 						<div class="d-block btn-c pt-5">
 							<!-- <a href="" class="btn bg-dorado d-inline-block">más información</a> -->
 						</div>

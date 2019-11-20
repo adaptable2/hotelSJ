@@ -28,15 +28,18 @@
 					<h2>Porque elegirnos</h2>
 				</div>
 				<div class="col-md-6 py-5">
-					<p>El Hotel El Portón de San Joaquín, es un hotel joven, de estilo corporativo, que ofrece servicios de alojamiento y de realización de eventos empresariales y sociales, siempre entregando un servicio con distinción. El Hotel El Portón de San Joaquín ofrece un buen descanso a sus visitantes y deliciosa comida en Cayena restaurante bar . Cuenta con personal altamente caliﬁcado y comprometido con el servicio, proactivo y con valores; el hotel le ofrece instalaciones acogedoras y atención a los detalles para garantizar una estadía inmejorable.</p>
+					<p>En el Hotel Portón de San Joaquín contamos con 90 habitaciones, distribuidas en dos espectaculares torres: Antioquia y Ejecutiva, 2 salones para eventos, una sala de juntas, sauna, turco y gimnasio.</p>
+					<p>Te ofrecemos el servicio de lavandería y todas nuestras habitaciones están dotadas con aire acondicionado, televisor, minibar y Wifi de alta velocidad.</p>
+					<p>Además, contamos con dos acogedores espacios: bar y restaurante, donde podrás disfrutar de deliciosos platos gourmet e internacionales y bebidas exóticas y muy a tu estilo, como cocteles, cervezas y muchas más.</p>
+					<p>¿Qué esperas? Nuestras instalaciones son amplias, elegantes, de diseño sobrio, decoración sutil y buen gusto. Somos el hotel que piensa en ti. </p>
 					<ul>
 						<li>
 							<p><strong>TORRE EXPRESS</strong></p>
-							Es para alojamientos de periodos cortos. Es la torre de más fácil acceso, más rápida para dar atención al huésped por la cercanía con el lobby, los precios son más económicos, las habitaciones son más pequeñas y son internas. Total 38 habitaciones.
+							38 habitaciones. Un espacio acogedor e inspirado en la cultura paisa; a través de sus paredes le rinde homenaje a los territorios más emblemáticos del departamento antioqueño. Es ideal para alojamientos de períodos cortos. Es de fácil acceso y cerca al lobby. 
 						</li>
 						<li>
 							<p><strong>TORRE EJECUTIVA</strong></p>
-							Es para alojamientos corporativos y estancias más largas. Las habitaciones de esta torre cuentan con iluminación natural y mayor comodidad en espacios. Cuentan con sofá en las habitaciones y escritorio. 51 habitaciones.
+							52 habitaciones. Un lugar acogedor y de iluminación natural. Cuenta con cómodos espacios comunes. Ideal para alojamientos corporativos y estancias más largas. Su diseño es moderno y de buen gusto. 
 						</li>
 					</ul>
 				</div>
@@ -56,27 +59,27 @@
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/wifi.png" alt="">
-							<p>Internet por cable y WI-FI Conexión de alta velocidad con cobertura en todas las áreas del hotel</p>
+							<p>Conexión gratuita y de alta velocidad con cobertura en todas las áreas del Hotel.</p>
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/casa.png" alt="">
-							<p>Servicio de Alojamiento Servicio con la oferta de 3 torres y 130 habitaciones</p>
+							<p>90 habitaciones cómodas y bien dotadas.</p>
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/chef-1.png" alt="">
-							<p>Restaurante-Bar CAYENA Un espacio agradable y cómodo donde encontrará deliciosa comida gourmet,  así como delicias de la cocina más auténtica de nuestra región.</p>
+							<p>Dos espacios agradables y acogedores, con bebidas especiales y platos tipo gourmet e internacionales.</p>
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ubicacion.png" alt="">
-							<p>Ubicación privilegiada Contamos con una ubicación estratégica cerca a zonas bancarias, deportivas, gastronómicas y actividades nocturnas.</p>
+							<p>Cerca al centro de la ciudad, restaurantes, universidades, zona rosa, universidades y entidades bancarias.</p>
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/lavadora.png" alt="">
-							<p>Servicio de lavandería Equipo esta altamente caliﬁcado y dotado para dejar sus prendas de forma optima</p>
+							<p>Un equipo calificado deja tus prendas de forma óptima.</p>
 						</div>
 						<div class="item col-md-6">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/calendario.png" alt="">
-							<p>Salones para Eventos Certámenes  corporativos, capacitaciones, lanzamientos, etc</p>
+							<p>Dotados con ayudas audiovisuales, proyector y silletería.</p>
 						</div>
 						
 					</div>

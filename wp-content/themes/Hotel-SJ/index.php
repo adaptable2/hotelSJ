@@ -72,21 +72,21 @@
 					<div class="star"></div>
 					<h2>EXCELENTE</h2>
 					<p class="font-arabic">
-						“El hotel es muy bonito y cómodo, la atención es excelente sobretodo Camilo que es muy diligente. La comida es muy buena y a excelente precio. Tienen mapas y opciones de tour por Medellín. Lo recomiendo es en realidad optimo”
+						“El hotel es muy bonito y cómodo. La atención es excelente; sobre todo, Camilo es muy diligente. La comida es muy buena y a excelente precio. Tienen mapas y opciones de tour por Medellín. Lo recomiendo; es en realidad óptimo”.
 					</p>
-					<h5>Angel gabriel g</h5>
+					<h5>Ana Gabriel G.</h5>
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
-					<h2>"ME ENCANTO"</h2>
-					<p class="font-arabic">“Excelente hotel...... excelente vista........ me encanto mucho el personal muy servicial y muy amable mil gracias..... Las habitaciones son muy cómodas..... Esta ubicado en un buen sector el desayuno muy agradable”</p>
+					<h2>ME ENCANTÓ</h2>
+					<p class="font-arabic">“Excelente hotel, excelente vista. Me encantó mucho; el personal muy servicial y muy amable. Mil gracias. Las habitaciones son muy cómodas, está ubicado en un buen sector y el desayuno muy agradable”.</p>
 					<h5>Johana</h5>
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
 					<h2>EXCELENTE</h2>
-					<p class="font-arabic">“Un hotel con habitaciones amplias, nuevas y comodisimas. La atención del personal es excelente, siempre amables y listos para ayudar en todo lo que pueden. Llegué muy temprano al check in y rápida mente solucionaron todo para que pudiera acceder a mi habitación. Lo mismo en el restaurante y bar. La limpieza impecable.”</p>
-					<h5>SebasBarros</h5>
+					<p class="font-arabic">“Un hotel con habitaciones amplias, nuevas y comodísimas. La atención del personal es excelente; siempre amables y listos para ayudar en todo lo que pueden. Llegué muy temprano al chek in, y rápidamente me solucionaron todo para que pudiera acceder a mi habitación. Lo mismo en el restaurante y bar. La limpieza impecable”.</p>
+					<h5>Sebas Barros</h5>
 				</div>
 			</div>
 		</div>
