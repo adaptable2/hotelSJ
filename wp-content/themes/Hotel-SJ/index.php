@@ -205,7 +205,7 @@
 			<?php
 		    	// Argumentos para una busqueda de post type
 			$args = array(
-					'post_type' => 'servicio', // Nombre del post type
+					'post_type' => 'servicio_index', // Nombre del post type
 					'order' => 'ASC'
 				);
 			$servicios = new WP_Query($args);
