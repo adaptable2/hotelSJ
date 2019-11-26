@@ -103,7 +103,7 @@
 
 	    //map
 	    function iniciarMap(){
-		    var coord = {lat: 6.2374437 ,lng: -75.5901287};
+		    var coord = {lat: 6.2470725 ,lng: -75.5893621};
 		    var icono = 'http://actividadcreativa.co/hotelSJ/wp-content/uploads/2019/11/icon-map.png';
 		    var map = new google.maps.Map(document.getElementById('map'),{
 		      zoom: 20,

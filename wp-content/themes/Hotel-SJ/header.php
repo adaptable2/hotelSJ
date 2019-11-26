@@ -13,6 +13,8 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/isotope.js" defer></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/masonry.js" defer></script>
 
 	</head>
 	<body <?php body_class(); ?>>
