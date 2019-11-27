@@ -16,7 +16,6 @@
 					<div class="col-md-6 p-0">
 						<div class='v-and-m-responsive'>
 							<div id="map" class="map-js"></div>
-							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1261458909084!2d-75.58733220365534!3d6.247103115631619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a7b84750b7%3A0x431e906a65d39a67!2sCl.%2042%20%2368a-32%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1572628810810!5m2!1ses!2sco" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
 						</div>
 					</div>
 				</div>
@@ -24,10 +23,14 @@
 			<!-- Formulario -->
 			<!-- footer -->
 			<div class="container-fluid">
-				<div class="row py-5">
+				<div class="row pt-5">
 					<div class="col-md-12 font-arabic font-upper text-center py-3 title-footer">
 						<h2>Comunidad digital</h2>
 					</div>
+				</div>
+			</div>
+				<div class="container">
+				<div class="row pb-5">
 					<div class="col-md-12">
 						<div class="footer-carousel">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/ambiente.svg" class="lazy">

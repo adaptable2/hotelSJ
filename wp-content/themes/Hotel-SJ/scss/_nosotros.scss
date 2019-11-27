@@ -52,7 +52,7 @@
 	}
 	&-one{
 		@media only screen and (min-width: 992px){
-			margin-bottom: -5%;
+			margin-bottom: -3%;
 		}
 		.img-one{
 			position: relative;
@@ -61,16 +61,17 @@
 				z-index: 1;
 				@media only screen and (min-width: 992px){
 					margin-bottom: -20%;
+					margin-top: -20%;
 				}
 			}
 			&:after{
 				content: "";
 				position: absolute;
 				z-index: 0;
-				top: -25%;
+				top: -35%;
 				height: 100%;
 				width: 80%;
-				left: -10%;
+				left: -5%;
 				display: none;
 				background-color: rgba($gray,0.5);
 				@media only screen and (min-width: 992px) {
@@ -83,7 +84,7 @@
 		position: relative;
 		padding: 30px 15px 0;
 		@media only screen and (min-width: 992px){
-			padding: 200px 15px 100px;
+			padding: 100px 15px 10px;
 		}
 		&:after{
 			content: "";

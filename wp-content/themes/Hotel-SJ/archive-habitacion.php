@@ -98,14 +98,15 @@
 								</div>
 								<div class="col-md-5 s-text font-arabic d-flex justify-content-center flex-column">
 									<div class="font-upper">
-										<h2><?php echo $habitacion_name;?></h2>
+										<h2><a href="http://secuream.e-gds.com/hotelelportondesanjoaquin"><?php echo $habitacion_name;?></a></h2>
 									</div>
 									<div class="text font-roboto">
 										<p>
 											<?php echo $habitacion_desc;?>								
 										</p>
+										<a href="http://secuream.e-gds.com/hotelelportondesanjoaquin" class="btn bg-dorado">Reservar</a>
 									</div>
-									<div class="torre font">
+									<div class="torre font-upper">
 										<p><?php echo $torre->name; ?></p>
 									</div>
 								</div>

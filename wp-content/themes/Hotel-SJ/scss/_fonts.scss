@@ -10,7 +10,8 @@
     url("./fonts/TCB.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
-  font-display: fallback;
+  font-display: block;
+  -webkit-font-display: block;
 }
 /* font converted using font-converter.net. thank you! */
 @font-face {
@@ -24,5 +25,6 @@
     url("./fonts/AdobeArabic-Regular.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
-  font-display: fallback;
+  font-display: block;
+  -webkit-font-display: block;
 }

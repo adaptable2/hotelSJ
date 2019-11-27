@@ -40,7 +40,7 @@ ul.sub-menu{
 	position: absolute;
 	top: 70%;
 	z-index: 1;
-	background: white;
+	background: rgba(white,0.9);
 	&:hover{
 		display: block;
 	}
@@ -48,15 +48,21 @@ ul.sub-menu{
 		display: block;
 		a{
 			padding: 10px 15px;
+			&:hover{
+				background: rgba($gray,0.5);
+			}
 		}
 		&:last-child{
-			background: white;
+			background: transparent;
 			@media only screen and (min-width: 992px){
 				padding-left: 0px;
 				padding-right: 0px; 
 			}
 			a{
 				color: $gray;
+				&:hover{
+					background: rgba($gray,0.5);
+				}
 			}
 		}
 	}

@@ -35,12 +35,18 @@ $cafe:#AC9080;
 .font{
 	&-arabic{
 		font-family: "AdobeArabic-Regular", system-ui;
+		font-display: block;
+		-webkit-font-display: block;
 	}
 	&-roboto{
 		font-family: 'Roboto Slab', system-ui;
+		font-display: block;
+		-webkit-font-display: block;
 	}
 	&-tw{
 		font-family: 'TwCenMT-Bold', system-ui;
+		font-display: block;
+		-webkit-font-display: block;
 	}
 	&-upper{
 		text-transform: uppercase;
@@ -69,17 +75,4 @@ input:focus,button[type="button"]:focus{
 	width: 100%;
 	height: 100%;
 }
-
-// .d-grid{
-// 	display: grid;
-// 	grid-template: repeat(3,minmax(100px,500px)) / repeat(12,1fr);
-// 	grid-gap: 13px;
-// 	.item{
-// 		background: silver;
-// 		border:solid 1px gray;
-// 		&:nth-of-type(3n + 1){
-// 			background: red;
-// 		}
-// 	}
-// }
 

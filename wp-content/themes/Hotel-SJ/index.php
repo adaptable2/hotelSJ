@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="">
+<div class="d-none">
 	<!-- banner -->
 	<section class="banner">
 		<div class="carousel-banner">
@@ -28,31 +28,20 @@
 	<section class="form">
 		<div class="container form-banner">
 			<div class="row justify-content-center justify-content-md-start">
-				<div class="col-12"> 
+				<div class="col-12 d-none"> 
 					<div class="separa bg-azul ">
 						<form action="" class="row align-items-end">
-							<div class="col-md-3">
-								<label for="">Check in:
-								</label>
-								<input type="text">
-							</div>
-							<div class="col-md-3">
-								<label for="">Check out:
-								</label>
-								<input type="text">
-							</div>
-							<div class="col-md-4">
-								<div class="quantity">
-									<label for="archive.php">Adultos</label>
-									<input type="number" min="1" max="9" step="1" value="1">
-								</div>
-								<div class="quantity">
-									<label for="">Niños</label>
-									<input type="number" min="0" max="9" step="1" value="0">
-								</div>
+							<div class="col-md-2">
 							</div>
 							<div class="col-md-2">
-								<input type="submit">
+							</div>
+							<div class="col-md-2">
+							</div>
+							<div class="col-md-2">
+							</div>
+							<div class="col-md-2">
+							</div>
+							<div class="col-md-2">
 							</div>
 						</form>
 					</div>
@@ -95,15 +84,7 @@
 	<!-- nosotros -->
 	<section class="nosotros font-arabic nosotros-one container-fluid py-5 bg-azul color-white">
 		<div class="row">
-			<div class="col-lg-6 offset-lg-1">
-				<ul >
-					<li>CONFORT</li>
-					<li>LUJO</li>
-					<li>ESTILO</li>
-					<li>CALIDAD</li>
-				</ul>
-			</div>
-			<div class="col-lg-4 text-center pt-3 pb-5 py-lg-0">
+			<div class="offset-lg-6 col-lg-4 text-center pt-3 pb-5 py-lg-0">
 				<h2 class="color-dorado">ACERCA DE NOSOTROS</h2>
 				<div class="carousel font-roboto">
 					<?php
@@ -272,4 +253,45 @@
 	</section>
 	<!-- /galeria -->
 </div>
+<?php
+    	// Argumentos para una busqueda de post type
+$args = array(
+			'post_type' => 'banner_interna', // Nombre del post type
+			'order' => 'ASC',
+			'banners_interna' => 'Alojamiento'
+		);
+$banners = new WP_Query($args);
+if ($banners->posts):
+      // Foreach para recorrer el resultado de la busqueda
+	foreach ($banners->posts as $banner):
+	 	 	$banner_name = $banner->post_title;
+		$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
+?>
+<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(<?php echo $banner; ?>) no-repeat center center / cover;">
+	<h1><?php echo $banner_name;?></h1>
+</section>
+<?php
+endforeach;
+endif; 
+?>
+<section class="blog bg-azul py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 color-gray d-flex align-items-center">
+				<div class="row bg-white py-5 px-md-3 text-blog">
+					<div class="col-md-9">
+						<h2 class="font-arabic">Post</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi doloremque, ducimus quod asperiores distinctio illo obcaecati fuga ad rem numquam suscipit itaque corrupti, expedita dolore adipisci blanditiis odio, accusamus similique.</p>
+					</div>
+					<div class="col-md-3 d-flex align-items-center">
+						<a href="">Más información</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 p-0">
+				<img src="https://picsum.photos/id/237/600/400" alt="" class="w-100">
+			</div>
+		</div>
+	</div>
+</section>
 <?php get_footer(); ?>
