@@ -4,6 +4,19 @@
 		
 		'use strict';
 		//arrow input number
+
+		$(window).scroll(function() {
+		    var windowHeight = $(window).scrollTop();
+		    var contenido2 = $("#form").offset();
+		    contenido2 = contenido2.top;
+
+		    if (windowHeight >= contenido2) {
+	    		$('#separa').addClass('mover');
+		    }else{
+	    		$('#separa').removeClass('mover');
+		    }
+		});
+
 		$('<div class="quantity-nav"><div class="quantity-button quantity-up">^</div><div class="quantity-button quantity-down">^</div></div>').insertAfter('.quantity input');
 		$('.quantity').each(function() {
 			var spinner = $(this),

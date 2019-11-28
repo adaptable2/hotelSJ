@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="d-none">
+<div class="">
 	<!-- banner -->
 	<section class="banner">
 		<div class="carousel-banner">
@@ -25,27 +25,55 @@
 	</section>
 	<!-- banner -->
 	<!-- formulario -->
-	<section class="form">
+	<section class="form" id="form">
 		<div class="container form-banner">
 			<div class="row justify-content-center justify-content-md-start">
-				<div class="col-12 d-none"> 
-					<div class="separa bg-azul ">
-						<form action="" class="row align-items-end">
-							<div class="col-md-2">
+				<a href="http://secuream.e-gds.com/hotelelportondesanjoaquin/light/" target="_blank" class="separa bg-azul color-white col-12" id="separa">
+					<h2 class="bg-dorado font-arabic d-none d-lg-block">
+						Así nos califican, los que saben de hoteles en el mundo.
+					</h2>
+					<div class="row">
+						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/tripadvisor-8.png" class="lazy">
+							<div class="calificacion d-inline-block font-roboto">
+								<span class="d-block">9,5</span>
+								<small>sobre 10</small>
 							</div>
-							<div class="col-md-2">
+						</div>
+						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/despega-8.png" class="lazy">
+							<div class="calificacion d-inline-block font-roboto">
+								<span class="d-block">9,8</span>
+								<small>sobre 10</small>
 							</div>
-							<div class="col-md-2">
+						</div>
+						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/hotels-8.png" class="lazy">
+							<div class="calificacion d-inline-block font-roboto">
+								<span class="d-block">9,1</span>
+								<small>sobre 10</small>
 							</div>
-							<div class="col-md-2">
+						</div>
+						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/expedia-8.png" class="lazy">
+							<div class="calificacion d-inline-block font-roboto">
+								<span class="d-block">4,5</span>
+								<small>sobre 10</small>
 							</div>
-							<div class="col-md-2">
+						</div>
+						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/booking-8.png" class="lazy">
+							<div class="calificacion d-inline-block font-roboto">
+								<span class="d-block">9,1</span>
+								<small>sobre 10</small>
 							</div>
-							<div class="col-md-2">
-							</div>
-						</form>
+						</div>
+						<div class="col d-flex align-items-center p-0 justify-content-center font-arabic">
+							<div class="btn color-azul bg-dorado">Reservar</div>
+						</div>
 					</div>
-				</div>
+				</a>
+			</a>
 			</div>
 		</div>
 	</section>
@@ -55,7 +83,7 @@
 		<div class="container">
 			<div class="row align-items-stretch">
 				<div class="col-12 text-center pb-5">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png" class="lazy">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png">
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
@@ -252,116 +280,5 @@
 		</div>
 	</section>
 	<!-- /galeria -->
-</div>
-<div class="d-none">
-	<?php
-	    	// Argumentos para una busqueda de post type
-	$args = array(
-				'post_type' => 'banner_interna', // Nombre del post type
-				'order' => 'ASC',
-				'banners_interna' => 'Alojamiento'
-			);
-	$banners = new WP_Query($args);
-	if ($banners->posts):
-	      // Foreach para recorrer el resultado de la busqueda
-		foreach ($banners->posts as $banner):
-			$banner_name = $banner->post_title;
-			$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
-			?>
-			<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(<?php echo $banner; ?>) no-repeat center center / cover;">
-				<h1><?php echo $banner_name;?></h1>
-			</section>
-			<?php
-		endforeach;
-	endif; 
-	?>
-	<section class="blog bg-azul py-5 mb-5">
-		<div class="container">
-			<div class="row pb-5">
-				<div class="offset-md-4 pl-5 col-md-6 color-white title-blog">
-					<h2 class="font-arabic">
-						titulo
-					</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laudantium quam illum perspiciatis. Mollitia blanditiis ex perspiciatis officiis eaque repudiandae officia provident. Illo recusandae expedita, distinctio explicabo, quia id velit!</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="content-post py-5 col-12 d-flex justify-content-center align-items-center">
-					<div class="col-md-6 color-gray d-flex align-items-center">
-						<div class="row bg-white py-5 px-md-3 text-blog text-blog font-roboto">
-							<div class="col-md-9">
-								<h2 class="font-arabic title">Post</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi doloremque, ducimus quod asperiores distinctio illo obcaecati fuga ad rem numquam suscipit itaque corrupti, expedita dolore adipisci blanditiis odio, accusamus similique.</p>
-							</div>
-							<div class="col-md-3 d-flex align-items-center px-0">
-								<a href="" class="btn-blog">Más información</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 p-0">
-						<img src="https://picsum.photos/id/237/600/400" alt="" class="w-100">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="content-post py-5 col-12 d-flex justify-content-center align-items-center">
-					<div class="col-md-6 color-gray d-flex align-items-center">
-						<div class="row bg-white py-5 px-md-3 text-blog text-blog font-roboto">
-							<div class="col-md-9">
-								<h2 class="font-arabic title">Post</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi doloremque, ducimus quod asperiores distinctio illo obcaecati fuga ad rem numquam suscipit itaque corrupti, expedita dolore adipisci blanditiis odio, accusamus similique.</p>
-							</div>
-							<div class="col-md-3 d-flex align-items-center px-0">
-								<a href="" class="btn-blog">Más información</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 p-0">
-						<img src="https://picsum.photos/id/237/600/400" alt="" class="w-100">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-<div class="">
-<?php
-	// Argumentos para una busqueda de post type
-	$args = array(
-				'post_type' => 'banner_interna', // Nombre del post type
-				'order' => 'ASC',
-				'banners_interna' => 'Alojamiento'
-			);
-	$banners = new WP_Query($args);
-	if ($banners->posts):
-	      // Foreach para recorrer el resultado de la busqueda
-		foreach ($banners->posts as $banner):
-			$banner_name = $banner->post_title;
-			$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
-			?>
-			<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(<?php echo $banner; ?>) no-repeat center center / cover;">
-				<h1><?php echo $banner_name;?></h1>
-			</section>
-	<?php
-	endforeach;
-	endif; 
-	?>
-	<section class="py-5 container interna-blog">
-		<div class="row font-roboto color-gray">
-			<div class="col-12">
-				<h1>lorem</h1>
-				<h2>lorem</h2>
-				<h3>lorem</h3>
-				<h4>lorem</h4>
-				<img src="https://picsum.photos/id/247/2200/300" alt="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quis maxime cupiditate quibusdam voluptate a debitis quia. Nihil quidem, sunt alias deserunt voluptates est. Eos impedit ab delectus quibusdam labore!</p>
-				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quaerat ipsa blanditiis, tenetur ad, alias! Excepturi mollitia odio autem distinctio enim quos obcaecati iusto accusantium facilis earum, minus dicta voluptate!</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quaerat ipsa blanditiis, tenetur ad, alias! Excepturi mollitia odio autem distinctio enim quos obcaecati iusto accusantium facilis earum, minus dicta voluptate!</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quaerat ipsa blanditiis, tenetur ad, alias! Excepturi mollitia odio autem distinctio enim quos obcaecati iusto accusantium facilis earum, minus dicta voluptate!</li>
-				</ul>
-			</div>
-		</div>
-	</section>
 </div>
 <?php get_footer(); ?>

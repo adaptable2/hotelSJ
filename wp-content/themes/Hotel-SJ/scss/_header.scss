@@ -19,7 +19,7 @@
 			}
 		}
 		a{
-			padding: 20px;
+			padding: 20px 5px;
 			display: block;
 			text-transform: uppercase;
 			font-family: "TwCenMT-Bold", system-ui;
@@ -47,7 +47,7 @@ ul.sub-menu{
 	li{
 		display: block;
 		a{
-			padding: 10px 15px;
+			padding: 10px 5px;
 			&:hover{
 				background: rgba($gray,0.5);
 			}

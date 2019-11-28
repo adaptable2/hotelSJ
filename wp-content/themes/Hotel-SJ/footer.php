@@ -25,7 +25,7 @@
 			<div class="container-fluid">
 				<div class="row pt-5">
 					<div class="col-md-12 font-arabic font-upper text-center py-3 title-footer">
-						<h2>Comunidad digital</h2>
+						<h2>Sellos de certificación y gremios asociados</h2>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 					</div>				
 				</div>
 			</div>
-			<a href="https://api.whatsapp.com/send?phone=573147931996" class="wp"></a>
+			<a href="https://api.whatsapp.com/send?phone=573147931996&text=Hola%2c%20me%20gustar%c3%ada%20saber%20m%c3%a1s%20informaci%C3%B3n%20sobre%20el%20hotel." class="wp" target="_blank"></a>
 			<footer class="footer py-5" role="contentinfo">
 				<div class="container">
 					<div class="row color-white">
@@ -86,26 +86,26 @@
 										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/fb.png" alt="facebook" class="img-fluid lazy">
 									</a>
 								</li>
-								<!--<li>
-									<a href="">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/tw.png" alt="" class="img-fluid">
-									</a>
-								</li>-->
 								<li>
+									<a href="https://www.facebook.com/elportonsj/">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/yt.png" alt="facebook" class="img-fluid lazy">
+									</a>
+								<li>
+								</li>
 									<a href="https://www.instagram.com/elportonsj/">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/ig.png" alt="instagram" class="img-fluid lazy">
-									</a>
 								</li>
+									</a>
 							</ul>
 						</div>
 					</div>
 					<div class="col-12 color-white d-flex justify-content-between pt-3 mt-3 copy flex-column flex-lg-row">
 						<div class="rnt">RNT 12993</div>
 						<p> 
-							<a href="WWW.HOTELELPORTONDESANJUAQUIN.COM">WWW.HOTELELPORTONDESANJUAQUIN.COM</a>
+							<a href="http://hotelportonsj.com.co/">www.hotelportonsj.com.co</a>
 						</p>
 						<p>
-							HOTELELPORTONDESANJUAQUIN©  |  TODOS LOS DERECHOS RESERVADOS  |  2019
+							HOTELPORTONDESANJOAQUÍN©  |  TODOS LOS DERECHOS RESERVADOS  |  2019
 						</p>
 					</div>
 				</div>
