@@ -95,10 +95,10 @@ function html5blank_header_scripts()
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '3.4.1'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
+    // if (is_page('pagenamehere')) {
+    //     wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '3.4.1'); // Conditional script(s)
+    //     wp_enqueue_script('scriptname'); // Enqueue it!
+    // }
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
         wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
@@ -120,6 +120,13 @@ function html5blank_conditional_scripts()
         wp_enqueue_style('html5blank'); // Enqueue it!
     }
 
+}
+
+function replace_core_jquery_version() {
+    wp_deregister_script( 'jquery-core' );
+    wp_register_script( 'jquery-core', "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", array(), '3.4.1' );
+    wp_deregister_script( 'jquery-migrate' );
+    wp_register_script( 'jquery-migrate', "https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js", array(), '3.1.0' );
 }
 
 // Load HTML5 Blank styles
@@ -362,6 +369,7 @@ function html5blankcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('after_setup_theme', 'footer_enqueue_scripts');
+add_action('after_setup_theme', 'replace_core_jquery_version');
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments

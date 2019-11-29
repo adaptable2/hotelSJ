@@ -1,21 +1,18 @@
 (function ($, root, undefined) {
-	
 	$(function () {
-		
-		'use strict';
-		//arrow input number
+		if ( $("#separa").length > 0 ) {
+			$(window).scroll(function() {
+			    var windowHeight = $(window).scrollTop();
+			    var contenido2 = $("#form").offset();
+			    contenido2 = contenido2.top;
 
-		$(window).scroll(function() {
-		    var windowHeight = $(window).scrollTop();
-		    var contenido2 = $("#form").offset();
-		    contenido2 = contenido2.top;
-
-		    if (windowHeight >= contenido2) {
-	    		$('#separa').addClass('mover');
-		    }else{
-	    		$('#separa').removeClass('mover');
-		    }
-		});
+			    if (windowHeight >= contenido2) {
+		    		$('#separa').addClass('mover');
+			    }else{
+		    		$('#separa').removeClass('mover');
+			    }
+			});
+		}
 
 		$('<div class="quantity-nav"><div class="quantity-button quantity-up">^</div><div class="quantity-button quantity-down">^</div></div>').insertAfter('.quantity input');
 		$('.quantity').each(function() {
@@ -51,11 +48,11 @@
 		});
 		
 		//slick
-		$('.carousel').slick({
-			nextArrow: '<button type="button" class="slick-next">></button>',
-			prevArrow: '<button type="button" class="slick-prev"><</button>',
-			dots: true
-		});
+		// $('.carousel').slick({
+		// 	nextArrow: '<button type="button" class="slick-next">></button>',
+		// 	prevArrow: '<button type="button" class="slick-prev"><</button>',
+		// 	dots: true
+		// });
 		$('.carousel-banner').slick({
 			nextArrow: '<button type="button" class="slick-next">></button>',
 			prevArrow: '<button type="button" class="slick-prev"><</button>'
@@ -96,24 +93,6 @@
 			    }
 			  ]
 		});
-		// init Isotope
-		var $grid = $('.grid').isotope({
-		  itemSelector: '.grid-item',
-		  percentPosition: true,
-  		masonry: {
-    	// use outer width of grid-sizer for columnWidth
-    		columnWidth: 350,
-    		gutter: 20,
-  			horizontalOrder: true
-  		}
-		});
-
-		// bind filter button click
-		$('#filters').on( 'click', 'button', function() {
-		  var filterValue = $( this ).attr('data-filter');
-		  $grid.isotope({ filter: filterValue });
-		});
-
 	    //map
 	    function iniciarMap(){
 		    var coord = {lat: 6.2470725 ,lng: -75.5893621};
@@ -129,7 +108,25 @@
 		    });
 		}
 		iniciarMap();
+		
+	// init Isotope
+	var $grid = $('.grid').isotope({
+	  itemSelector: '.grid-item',
+	  percentPosition: true,
+		masonry: {
+	// use outer width of grid-sizer for columnWidth
+		columnWidth: 350,
+		gutter: 20,
+			horizontalOrder: true
+		}
+	});
 
+	// bind filter button click
+	$('#filters').on( 'click', 'button', function() {
+	  var filterValue = $( this ).attr('data-filter');
+	  $grid.isotope({ filter: filterValue });
+	});
+	
 	});
 })(jQuery, this);
 
@@ -164,7 +161,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 200);
     }
   };
-
   document.addEventListener("scroll", lazyLoad);
   window.addEventListener("resize", lazyLoad);
   window.addEventListener("orientationchange", lazyLoad);
