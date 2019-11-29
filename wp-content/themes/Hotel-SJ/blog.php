@@ -70,7 +70,7 @@
 	</section>
 </div>
 <div class="d-none">
-<?php
+	<?php
 	// Argumentos para una busqueda de post type
 	$args = array(
 				'post_type' => 'banner_interna', // Nombre del post type
