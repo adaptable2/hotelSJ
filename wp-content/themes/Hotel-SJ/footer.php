@@ -116,12 +116,12 @@
 			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="preload" async/>
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" async/>
 	 		<?php wp_footer(); ?>
-			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" async></script>
-			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" async></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" async></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tg95tRLV0b3omGIVAB3gD7WXVyjCNSU" async></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" async></script>
-			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" async></script>
+			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tg95tRLV0b3omGIVAB3gD7WXVyjCNSU"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 			<script>
 	        conditionizr.config({
 	        	assets: '<?php echo get_template_directory_uri(); ?>',
