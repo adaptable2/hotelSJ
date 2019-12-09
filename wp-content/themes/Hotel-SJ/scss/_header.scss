@@ -48,6 +48,8 @@ ul.sub-menu{
 		display: block;
 		a{
 			padding: 10px 5px;
+			font-family: 'TwCenMT-regular', system-ui;
+			font-size: 13px;
 			&:hover{
 				background: rgba($gray,0.5);
 			}

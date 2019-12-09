@@ -58,7 +58,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/expedia-8.png" class="lazy">
 							<div class="calificacion d-inline-block font-roboto">
 								<span class="d-block">4,5</span>
-								<small>sobre 10</small>
+								<small>sobre 5</small>
 							</div>
 						</div>
 						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
@@ -83,7 +83,7 @@
 		<div class="container">
 			<div class="row align-items-stretch">
 				<div class="col-12 text-center pb-5">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png" class="lazy">
 				</div>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
