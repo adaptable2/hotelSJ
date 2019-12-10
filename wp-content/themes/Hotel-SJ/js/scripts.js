@@ -96,7 +96,7 @@
 	    //map
 	    function iniciarMap(){
 		    var coord = {lat: 6.2470725 ,lng: -75.5893621};
-		    var icono = 'http://actividadcreativa.co/hotelSJ/wp-content/uploads/2019/11/icon-map.png';
+		    var icono = 'https://www.hotelportonsj.com.co/wp-content/uploads/2019/11/icon-map.png';
 		    var map = new google.maps.Map(document.getElementById('map'),{
 		      zoom: 20,
 		      center: coord
