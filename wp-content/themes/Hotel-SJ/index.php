@@ -41,14 +41,14 @@
 							</div>
 						</div>
 						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/despega-8.png" class=" ">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/despegar.png" class=" ">
 							<div class="calificacion d-inline-block font-roboto">
 								<span class="d-block">9,8</span>
 								<small>sobre 10</small>
 							</div>
 						</div>
 						<div class="col califi align-items-center p-0 justify-content-center d-none d-lg-flex">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/hotels-8.png" class=" ">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/hoteles.png" class=" ">
 							<div class="calificacion d-inline-block font-roboto">
 								<span class="d-block">9,1</span>
 								<small>sobre 10</small>
