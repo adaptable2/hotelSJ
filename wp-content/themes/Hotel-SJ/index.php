@@ -15,7 +15,7 @@
 				foreach ($banners->posts as $banner):
 					$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
 					?>
-					<div class="c-home item" style="background: url(<?php echo get_template_directory_uri(); ?>/img/banner@1x.png) no-repeat center center / cover;">
+					<div class="c-home item" style="background: url(<?php echo $banner; ?>) no-repeat center center / cover;">
 					</div>
 					<?php
 				endforeach;
