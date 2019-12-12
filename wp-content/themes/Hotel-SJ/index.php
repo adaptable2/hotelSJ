@@ -263,14 +263,27 @@
 				foreach ($galerias->posts as $galeria):
 					$galeria_img = wp_get_attachment_url( get_post_thumbnail_id($galeria->ID, 'full') );
 					$galeria_name = $galeria->post_title;
-
-					?>
+					switch ($galeria->post_name) {
+				    case "restaurante":
+				        $link = get_home_url().'/menu';
+				        break;
+				    case "bar":
+				        $link = get_home_url().'/menu';
+				        break;
+				    case "instalaciones":
+				        $link = get_home_url().'/salon';
+				        break;
+				    case "habitaciones-g":
+				        $link = get_home_url().'/habitacion';
+				        break;
+					}
+			?>
 					<div class="col-6 col-md p-0 galeria-item d-flex">
-						<a href="http://actividadcreativa.co/hotelSJ/galeria" class="d-block w-100">
+						<a href="<?php echo $link; ?>" class="d-block w-100">
 							<img src="<?php echo $galeria_img; ?>" alt="" class="w-100  ">
 						</a>
 						<div class="titulo">
-							<a href="http://actividadcreativa.co/hotelSJ/galeria"><p><?php echo $galeria_name;?></p></a>
+							<a href="<?php echo $link; ?>"><p><?php echo $galeria_name;?></p></a>
 						</div>
 					</div>
 					<?php
