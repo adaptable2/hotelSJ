@@ -33,11 +33,23 @@
 				<div class="row pb-5">
 					<div class="col-md-12">
 						<div class="footer-carousel">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/ambiente.svg" class="lazy">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/cotelco.svg" class="lazy">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/codeorg.svg" class="lazy">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/turi.svg" class="lazy">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/bureau.svg" class="lazy">
+						<?php
+						    	// Argumentos para una busqueda de post type
+						$args = array(
+									'post_type' => 'corousel-footer', // Nombre del post type
+									'order' => 'ASC'
+								);
+						$f_carouse = new WP_Query($args);
+						if ($f_carouse->posts):
+						      // Foreach para recorrer el resultado de la busqueda
+							foreach ($f_carouse->posts as $f_carousel):
+								$f_carousel_img = wp_get_attachment_url( get_post_thumbnail_id($f_carousel->ID, 'full') );
+						?>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo $f_carousel_img; ?>" class="img-fluid lazy">
+						<?php
+						endforeach;
+						endif; 
+						?>
 						</div>
 					</div>				
 				</div>
