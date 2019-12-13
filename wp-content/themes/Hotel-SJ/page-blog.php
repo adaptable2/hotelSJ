@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="">
+<div class="camilo">
 	<?php
 	    	// Argumentos para una busqueda de post type
 	$args = array(
@@ -25,14 +25,11 @@
 		<div class="container">
 			<div class="row pb-5">
 				<div class="offset-md-4 pl-5 col-md-6 color-white title-blog">
-					<h2 class="font-arabic">
 						<?php
 							$pageBlog = get_post(335);
 							$pageMeta = get_post_meta(335);
-							echo $pageMeta['Titulo'][0];
+							// echo $pageMeta['Titulo'][0];
 						?>
-						
-					</h2>
 					<p>
 						<?php echo $pageBlog->post_content; ?>
 					</p>
