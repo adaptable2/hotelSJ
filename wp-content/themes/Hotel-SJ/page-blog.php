@@ -58,7 +58,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 p-0">
-							<img src="<?php echo $imgBlog; ?>" alt="" class="w-100">
+							<img src="<?php echo $imgBlog; ?>" alt="" class="img-item-blog">
 						</div>
 					</div>
 				</div>
