@@ -129,12 +129,12 @@
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tg95tRLV0b3omGIVAB3gD7WXVyjCNSU"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-			<script>
 	 		<?php wp_footer(); ?>
+			<script>
 	        conditionizr.config({
 	        	assets: '<?php echo get_template_directory_uri(); ?>',
 	        	tests: {}
 	        });
-	    	</script>
+    	</script>
 </body>
 </html>
