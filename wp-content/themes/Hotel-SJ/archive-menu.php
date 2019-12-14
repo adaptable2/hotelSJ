@@ -31,12 +31,12 @@
     if ($menus->posts):
       $i = 0;
   ?>
-      <div class="button-group">
+      <div class="button-group filters">
       <?php  
         foreach ($menus->posts as $menu):
       ?>
           <button class="<?php echo $i == 0 ? 'is-checked' : '' ?>" data-filter=".<?php echo $menu->post_name; ?>" ><?php echo $menu->post_title; ?></button>
-      <?php endforeach; ?>
+      <?php $i ++; endforeach; ?>
       </div>
   <?php endif; ?>
     <div class="row py-5">

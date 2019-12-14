@@ -31,7 +31,7 @@
 		$galerias = new WP_Query($args);
 		if ($galerias->posts):
 	?>
-		<div id="filters" class="button-group">
+		<div class="button-group filters">
 			<button class="button is-checked" data-filter="*">VER TODOS</button>
 				<?php  
 					// Foreach para recorrer el resultado de la busqueda

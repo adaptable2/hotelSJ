@@ -15,7 +15,7 @@
 				foreach ($banners->posts as $banner):
 					$banner = wp_get_attachment_url( get_post_thumbnail_id($banner->ID, 'full') );
 					?>
-					<div class="c-home item" style="background: url(<?php echo get_template_directory_uri(); ?>/img/banner@1x.png) no-repeat center center / cover;">
+					<div class="c-home item" style="background: url(<?php echo $banner; ?>) no-repeat center center / cover;">
 					</div>
 					<?php
 				endforeach;
@@ -85,26 +85,32 @@
 				<div class="col-12 text-center pb-5">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/TripAdvisor.png" class=" ">
 				</div>
+				<?php
+		    	// Argumentos para una busqueda de post type
+					$args = array(
+					'post_type' => 'trip', // Nombre del post type
+					'order' => 'ASC'
+				);
+				$trip = new WP_Query($args);
+				if ($trip->posts):
+		      // Foreach para recorrer el resultado de la busqueda
+				foreach ($trip->posts as $tripad):
+					$tripad_name = $tripad->post_title;
+					$tripad_decs = $tripad->post_content;
+					$tripad_person = $tripad->persona;
+				?>
 				<div class="col-md-4 item-trip">
 					<div class="star"></div>
-					<h2>EXCELENTE</h2>
+					<h2><?php echo $tripad_name;?></h2>
 					<p class="font-arabic">
-						“El hotel es muy bonito y cómodo. La atención es excelente; sobre todo, Camilo es muy diligente. La comida es muy buena y a excelente precio. Tienen mapas y opciones de tour por Medellín. Lo recomiendo; es en realidad óptimo”.
+						<?php echo $tripad_decs;?>
 					</p>
-					<h5>Ana Gabriel G.</h5>
+					<h5><?php echo $tripad_person;?></h5>
 				</div>
-				<div class="col-md-4 item-trip">
-					<div class="star"></div>
-					<h2>ME ENCANTÓ</h2>
-					<p class="font-arabic">“Excelente hotel, excelente vista. Me encantó mucho; el personal muy servicial y muy amable. Mil gracias. Las habitaciones son muy cómodas, está ubicado en un buen sector y el desayuno muy agradable”.</p>
-					<h5>Johana</h5>
-				</div>
-				<div class="col-md-4 item-trip">
-					<div class="star"></div>
-					<h2>EXCELENTE</h2>
-					<p class="font-arabic">“Un hotel con habitaciones amplias, nuevas y comodísimas. La atención del personal es excelente; siempre amables y listos para ayudar en todo lo que pueden. Llegué muy temprano al chek in, y rápidamente me solucionaron todo para que pudiera acceder a mi habitación. Lo mismo en el restaurante y bar. La limpieza impecable”.</p>
-					<h5>Sebas Barros</h5>
-				</div>
+				<?php
+					endforeach;
+					endif; 
+				?>
 			</div>
 		</div>
 	</section>
