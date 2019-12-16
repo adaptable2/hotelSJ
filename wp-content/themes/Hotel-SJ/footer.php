@@ -54,7 +54,9 @@
 					</div>				
 				</div>
 			</div>
-			<a href="https://api.whatsapp.com/send?phone=573147931996&text=Hola%2c%20me%20gustar%c3%ada%20saber%20m%c3%a1s%20informaci%C3%B3n%20sobre%20el%20hotel." class="wp" target="_blank"></a>
+			<a href="https://api.whatsapp.com/send?phone=573147931996&text=Hola%2c%20me%20gustar%c3%ada%20saber%20m%c3%a1s%20informaci%C3%B3n%20sobre%20el%20hotel." class="wp" target="_blank">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-src="<?php echo get_template_directory_uri(); ?>/img/white.png" data-srcset="<?php echo get_template_directory_uri(); ?>/img/wp.png" class="img-fluid lazy">
+			</a>
 			<footer class="footer py-5" role="contentinfo">
 				<div class="container">
 					<div class="row color-white">
@@ -127,13 +129,13 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" async/>
 			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="preload" async/>
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" async/>	
+	 		<?php wp_footer(); ?>
 			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tg95tRLV0b3omGIVAB3gD7WXVyjCNSU"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	 		<?php wp_footer(); ?>
 			<script>
 	        conditionizr.config({
 	        	assets: '<?php echo get_template_directory_uri(); ?>',

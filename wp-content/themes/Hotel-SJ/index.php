@@ -100,12 +100,14 @@
 					$tripad_person = $tripad->persona;
 				?>
 				<div class="col-md-4 item-trip">
-					<div class="star"></div>
-					<h2><?php echo $tripad_name;?></h2>
-					<p class="font-arabic">
-						<?php echo $tripad_decs;?>
-					</p>
-					<h5><?php echo $tripad_person;?></h5>
+					<a href="https://www.tripadvisor.co/Hotel_Review-g297478-d9798254-Reviews-Casa_Hotel_San_Joaquin-Medellin_Antioquia_Department.html" class="color-gray">
+						<div class="star"></div>
+						<h2><?php echo $tripad_name;?></h2>
+						<p class="font-arabic">
+							<?php echo $tripad_decs;?>
+						</p>
+						<h5><?php echo $tripad_person;?></h5>
+					</a>
 				</div>
 				<?php
 					endforeach;

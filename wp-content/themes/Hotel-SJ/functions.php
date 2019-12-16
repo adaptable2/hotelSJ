@@ -139,6 +139,21 @@ function register_html5_menu()
     ));
 }
 
+function footer_enqueue_scripts() {
+
+if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()){
+    remove_action('wp_head', 'html5blank_conditional_scripts');
+    remove_action('wp_head', 'wp_print_scripts');
+    remove_action('wp_head', 'wp_print_head_scripts', 9);
+    remove_action('wp_head', 'wp_enqueue_scripts', 1);
+
+    add_action('wp_footer', 'wp_print_scripts', 5);
+    add_action('wp_footer', 'wp_enqueue_scripts', 5);
+    add_action('wp_footer', 'wp_print_head_scripts', 5);
+}
+
+}
+
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
 {
@@ -347,6 +362,7 @@ function html5blankcomments($comment, $args, $depth)
 \*------------------------------------*/
 
 // Add Actions
+add_action('after_setup_theme', 'footer_enqueue_scripts');
 add_action('after_setup_theme', 'replace_core_jquery_version');
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
