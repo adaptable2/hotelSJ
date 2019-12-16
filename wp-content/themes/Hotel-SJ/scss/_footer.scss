@@ -169,6 +169,9 @@ footer{
 		transform: translateY(-50%);
 		width: 32px;
 		height: 32px;
+		&.slick-prev{
+			left: 0;
+		}
 		&.slick-next{
 			right: 0;
 		}
