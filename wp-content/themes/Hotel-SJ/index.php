@@ -28,7 +28,7 @@
 	<section class="form" id="form">
 		<div class="container form-banner">
 			<div class="row justify-content-center justify-content-md-start">
-				<a href="http://secuream.e-gds.com/hotelelportondesanjoaquin/light/" target="_blank" class="separa bg-azul color-white col-12" id="separa">
+				<div class="separa bg-azul color-white col-12" id="separa">
 					<h2 class="bg-dorado font-arabic d-none d-lg-block">
 						Así nos califican, los que saben de hoteles en el mundo.
 					</h2>
@@ -69,11 +69,10 @@
 							</div>
 						</div>
 						<div class="col d-flex align-items-center p-0 justify-content-center font-arabic">
-							<div class="btn color-azul bg-dorado">Reservar</div>
+							<a href="http://secuream.e-gds.com/hotelelportondesanjoaquin/light/" target="_blank" class="btn color-azul bg-dorado">Reservar</a>
 						</div>
 					</div>
-				</a>
-			</a>
+				</div>
 			</div>
 		</div>
 	</section>
