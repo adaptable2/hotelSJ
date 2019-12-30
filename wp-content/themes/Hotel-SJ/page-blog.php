@@ -42,7 +42,7 @@
 				);
 				$posts = get_posts( $args );
 				foreach ($posts as $postBlog):
-					$imgBlog = wp_get_attachment_url( get_post_thumbnail_id($postBlog->ID, 'full') );
+					$imgBlog = $postBlog->thumbnail['guid'];
 			?>
 				<div class="row">
 					<div class="content-post py-5 col-12 d-flex justify-content-center align-items-center">
