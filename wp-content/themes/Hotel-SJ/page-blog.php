@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="camilo">
 	<?php
 	    	// Argumentos para una busqueda de post type
 	$args = array(
@@ -65,5 +64,4 @@
 		<?php endforeach; ?>
 		</div>
 	</section>
-</div>
 <?php get_footer(); ?>

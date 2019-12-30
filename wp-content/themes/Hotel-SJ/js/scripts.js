@@ -55,6 +55,10 @@
 		});
 		$('.carousel-banner').slick({
 			nextArrow: '<button type="button" class="slick-next">></button>',
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 4000,
 			prevArrow: '<button type="button" class="slick-prev"><</button>'
 		});
 		//carrusel de las habitaciones dentro de un tab
