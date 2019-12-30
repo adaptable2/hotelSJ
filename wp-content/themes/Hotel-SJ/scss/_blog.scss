@@ -1,17 +1,17 @@
 .text-blog{
 	position: relative;
 	box-shadow: 0 0 13px 0px rgba(0,0,0,0.5);
-	&:after{
-		content: "";
-		display: block;
-		position: absolute;
-		height: 100%;
-		width: 100px;
-		background: white;
-		right: calc(0% - 98px);
-    	z-index: 1;
-    	top: 0;
-	}
+	// &:after{
+	// 	content: "";
+	// 	display: block;
+	// 	position: absolute;
+	// 	height: 100%;
+	// 	width: 100px;
+	// 	background: white;
+	// 	right: calc(0% - 98px);
+ //    	z-index: 1;
+ //    	top: 0;
+	// }
 }
 .content-post{
 	position: relative;

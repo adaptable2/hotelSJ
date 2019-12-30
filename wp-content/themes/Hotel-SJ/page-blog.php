@@ -29,39 +29,31 @@
 							$pageMeta = get_post_meta(335);
 							// echo $pageMeta['Titulo'][0];
 						?>
-					<p>
-						<?php echo $pageBlog->post_content; ?>
-					</p>
+					<p><?php echo $pageBlog->post_content; ?></p>
 				</div>
 			</div>
-			<?php
-				$args = array(
-  				'post_type'   => 'post',
-  				'exclude' => '1'
-				);
-				$posts = get_posts( $args );
-				foreach ($posts as $postBlog):
-					$imgBlog = $postBlog->thumbnail['guid'];
-			?>
-				<div class="row">
-					<div class="content-post py-5 col-12 d-flex justify-content-center align-items-center">
-						<div class="col-md-6 color-gray d-flex align-items-center">
-							<div class="row bg-white py-5 px-md-3 text-blog text-blog font-roboto">
-								<div class="col-md-9">
-									<h2 class="font-arabic title"><?php echo $postBlog->post_title; ?></h2>
-									<p><?php echo $postBlog->post_excerpt; ?></p>
+			<div class="row">
+				<?php
+					$args = array(
+	  				'post_type'   => 'post',
+	  				'exclude' => '1'
+					);
+					$posts = get_posts( $args );
+					foreach ($posts as $postBlog):
+						$imgBlog = $postBlog->thumbnail['guid'];
+				?>
+						<div class="col-md-4 color-gray d-flex">
+							<div class="bg-white pb-5 px-md-3 text-blog text-blog font-roboto">
+								<div class="row mb-3">
+									<img src="<?php echo $imgBlog; ?>" alt="" class="img-item-blog">
 								</div>
-								<div class="col-md-3 d-flex align-items-center px-0">
-									<a href="<?php echo $postBlog->guid; ?>" class="btn-blog">Más información</a>
-								</div>
+								<h2 class="font-arabic title"><?php echo $postBlog->post_title; ?></h2>
+								<p><?php echo $postBlog->post_excerpt; ?></p>
+								<a href="<?php echo $postBlog->guid; ?>" class="btn-blog">Más información</a>
 							</div>
 						</div>
-						<div class="col-md-6 p-0">
-							<img src="<?php echo $imgBlog; ?>" alt="" class="img-item-blog">
-						</div>
-					</div>
-				</div>
-		<?php endforeach; ?>
+				<?php endforeach; ?>
+			</div>
 		</div>
 	</section>
 <?php get_footer(); ?>
