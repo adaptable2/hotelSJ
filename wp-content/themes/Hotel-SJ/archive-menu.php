@@ -48,6 +48,9 @@
           Deleita tu paladar en un espacio acogedor, atractivo y de decoración sutil, donde  podrás disfrutar de una gran variedad de platos, bebidas y pasabocas tipo gourmet e internacionales.
         </p>
       </div>
+      <div class="col-12 text-center py-3">
+        <a href="" class="btn bg-dorado color-azul">Reserva</a>
+      </div>
     </div>
     <section class="grid grid-galery">
       <?php 
