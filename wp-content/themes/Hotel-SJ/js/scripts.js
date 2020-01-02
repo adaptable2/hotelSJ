@@ -139,6 +139,8 @@
 	    $( this ).addClass('is-checked');
 	  });
 	});
+
+	$('.grid-galery').isotope({ filter: '.restaurante' });
 	
 	});
 })(jQuery, this);
