@@ -1,3 +1,29 @@
+.title-footer{	
+	h2{
+		border-bottom: solid 1px silver;
+		display: block;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+}
+.wp{
+	display: block;
+	width: 60px;
+	height:60px;
+	position: fixed;
+	bottom: 20px;
+    right: 20px;
+    z-index: 3;
+}
+.rnt{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -44px;
+	padding: 10px;
+	background: white;
+	color:$azul;
+}
 footer{
 	background: $azul;
 	font-family: "AdobeArabic-Regular", system-ui;
@@ -10,6 +36,7 @@ footer{
 			display: flex;
 			span{
 				display: flex;
+				flex-direction: column;
 			}
 		}
 		input{
@@ -17,9 +44,6 @@ footer{
 			border: solid 1px white;
 			color: white;
 			padding-left: 15px;
-		}
-		input[type="email"]{
-			width: 100%;
 		}
 		input[type="submit"]{
 			border: solid 1px white;
@@ -31,7 +55,23 @@ footer{
 			padding-left: 13px;
 			padding-right: 13px;
 			height: 100%;
+			max-height: 38px;
 		}
+		input[type="email"]{
+			width: 100%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			max-height: 38px;
+		}
+	}
+	div.wpcf7-validation-errors{
+		border-color: $dorado;
+	}
+	div.wpcf7-response-output{
+		margin: 10px 0;
+	}
+	span.wpcf7-not-valid-tip{
+		color: $vino;
 	}
 	div.wpcf7 {
 		.ajax-loader{
@@ -74,9 +114,11 @@ footer{
 			padding-left: 15px;
 			display: block;
 			position: relative;
-
 			&:hover{
 				color: white;
+				 + ul.sub-menu{
+					display: none;
+				}
 			}
 			&:after{
 				content: "";
@@ -110,12 +152,16 @@ footer{
 		}
 	}
 }
-
+.map-js{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
 .footer-carousel{
 	text-align: center;
 	img{
 		max-height: 100px;
-		max-width: 200px;
+		width: auto !important;
 	}
 	.slick-arrow{
 		position: absolute;
@@ -123,6 +169,9 @@ footer{
 		transform: translateY(-50%);
 		width: 32px;
 		height: 32px;
+		&.slick-prev{
+			left: 0;
+		}
 		&.slick-next{
 			right: 0;
 		}
