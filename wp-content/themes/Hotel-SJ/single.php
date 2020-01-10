@@ -4,7 +4,7 @@
 		$banner = wp_get_attachment_url( get_post_thumbnail_id($post->ID, 'full') );
 	?>
 	<section class="banner-interna container-fluid d-flex justify-content-center align-items-center font-arabic font-upper" style="background: url(<?php echo $banner; ?>) no-repeat center center / cover;">
-		<h1><?php the_title(); ?></h1>
+		<h1 class="container"><?php the_title(); ?></h1>
 	</section>
 	<section class="py-5 container interna-blog">
 		<div class="row font-roboto color-gray">
