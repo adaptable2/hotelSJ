@@ -84,3 +84,11 @@
     height: 400px;
     object-fit: cover;
 }
+.banner-interna{
+	h1{
+		@media screen and (max-width: 768px){
+			font-size: 35px;
+			line-height: 35px;
+		}
+	}
+}
